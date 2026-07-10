@@ -5,7 +5,9 @@ import { LanguageProvider } from "@/lib/language";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
-import { SITE_NAME, SITE_URL, PHONE_E164, EMAIL, INSTAGRAM_URL } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { businessJsonLd, websiteJsonLd } from "@/lib/seo";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -40,53 +42,16 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
-};
-
-// LocalBusiness structured data for search engines
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "CleaningService",
-  name: SITE_NAME,
-  url: SITE_URL,
-  image: `${SITE_URL}/og.png`,
-  logo: `${SITE_URL}/rox_horizontal.png`,
-  telephone: PHONE_E164,
-  email: EMAIL,
-  priceRange: "$$",
-  sameAs: [INSTAGRAM_URL],
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: PHONE_E164,
-    email: EMAIL,
-    contactType: "customer service",
-    areaServed: "US",
-    availableLanguage: ["English", "Portuguese"],
+  // Local geo signals for search engines.
+  other: {
+    "geo.region": "US-FL",
+    "geo.placename": "Orlando, Florida",
+    "geo.position": "28.5383;-81.3792",
+    ICBM: "28.5383, -81.3792",
   },
-  areaServed: [
-    { "@type": "City", name: "Orlando", "@id": "https://en.wikipedia.org/wiki/Orlando,_Florida" },
-    { "@type": "City", name: "Kissimmee", "@id": "https://en.wikipedia.org/wiki/Kissimmee,_Florida" },
-    { "@type": "AdministrativeArea", name: "Central Florida" },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Orlando",
-    addressRegion: "FL",
-    addressCountry: "US",
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "08:00",
-      closes: "18:00",
-    },
-  ],
-  makesOffer: [
-    { "@type": "Offer", itemOffered: { "@type": "Service", name: "House Cleaning" } },
-    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Office Cleaning" } },
-    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Store & Retail Cleaning" } },
-    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Vacation Rental Turnover Cleaning" } },
-  ],
+  // TODO: paste the Google Search Console verification token here once you
+  // create the property (Settings → Ownership verification → HTML tag).
+  // verification: { google: "PASTE_TOKEN_HERE" },
 };
 
 export default function RootLayout({
@@ -97,10 +62,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-        />
+        <JsonLd data={businessJsonLd()} />
+        <JsonLd data={websiteJsonLd()} />
         <LanguageProvider>
           <Header />
           <main className="flex-1">{children}</main>

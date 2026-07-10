@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
+import { JsonLd } from "@/components/JsonLd";
+import { serviceJsonLd, breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
+import en from "@/dictionaries/en.json";
 
 export const metadata: Metadata = {
   title: "House Cleaning Orlando — Recurring, Deep & Move-Out Cleans",
@@ -9,5 +12,12 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ServicePage service="house" />;
+  return (
+    <>
+      <JsonLd data={serviceJsonLd("house")} />
+      <JsonLd data={breadcrumbJsonLd("house")} />
+      <JsonLd data={faqJsonLd(en.servicePages.house.faq)} />
+      <ServicePage service="house" />
+    </>
+  );
 }

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { HomePage } from "@/components/HomePage";
+import { JsonLd } from "@/components/JsonLd";
+import { faqJsonLd } from "@/lib/seo";
+import en from "@/dictionaries/en.json";
 
 export const metadata: Metadata = {
   title: "House Cleaning Orlando FL | Rox Cleaning — Homes, Offices & Vacation Rentals",
@@ -9,5 +12,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <HomePage />;
+  return (
+    <>
+      <JsonLd data={faqJsonLd(en.faq.items)} />
+      <HomePage />
+    </>
+  );
 }
