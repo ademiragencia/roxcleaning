@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  --color-magenta: #e91e8c;
+  --color-magenta-dark: #c4116f;
+  --color-teal: #0f7173;
+  --color-teal-dark: #0a5657;
+  --color-graphite: #1b2530;
+  --color-blush: #ffd6ec;
+  --color-blush-soft: #fff0f8;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1eb257;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-graphite);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Floating WhatsApp button pulse */
+@keyframes wa-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.wa-pulse {
+  animation: wa-pulse 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .wa-pulse {
+    animation: none;
+  }
+}
+
+/* FAQ accordion chevron rotation */
+details.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+details.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,359 @@
+{
+  "waMessage": "Olá! Gostaria de um orçamento de limpeza grátis 😊",
+  "nav": {
+    "services": "Serviços",
+    "about": "Sobre",
+    "reviews": "Avaliações",
+    "faq": "Dúvidas",
+    "quote": "Orçamento Grátis",
+    "call": "Ligue para nós",
+    "menu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "langLabel": "Mudar idioma"
+  },
+  "hero": {
+    "badge": "Atendendo Orlando e Kissimmee, FL",
+    "title": "Sua casa impecável, sem você levantar um dedo",
+    "subtitle": "Limpeza profissional de casas, escritórios e aluguéis de temporada em Orlando, Kissimmee e Flórida Central — com uma equipe licenciada, segurada e de total confiança.",
+    "ctaPrimary": "Orçamento Grátis pelo WhatsApp",
+    "ctaSecondary": "Conheça Nossos Serviços"
+  },
+  "trust": [
+    { "title": "Licenciada e Segurada", "desc": "Cobertura completa para sua tranquilidade" },
+    { "title": "Avaliação 5 Estrelas", "desc": "Amada por famílias e anfitriões" },
+    { "title": "Horários Flexíveis", "desc": "Semanal, quinzenal ou avulsa" },
+    { "title": "Satisfação Garantida", "desc": "Não gostou? Refazemos sem custo" }
+  ],
+  "servicesSection": {
+    "title": "Serviços de limpeza feitos para você",
+    "subtitle": "De casas aconchegantes a lojas movimentadas, mantemos cada espaço da Flórida Central fresco, saudável e pronto para receber.",
+    "learnMore": "Saiba mais"
+  },
+  "serviceCards": {
+    "house": {
+      "name": "Limpeza Residencial",
+      "short": "Limpeza recorrente e faxina pesada que mantêm sua casa fresca, saudável e verdadeiramente relaxante."
+    },
+    "office": {
+      "name": "Limpeza de Escritórios",
+      "short": "Um escritório sempre limpo que sua equipe e seus clientes vão notar — no horário que funciona para o seu negócio."
+    },
+    "store": {
+      "name": "Limpeza de Lojas",
+      "short": "Pisos, vidros e provadores impecáveis que fazem o cliente se sentir bem-vindo e voltar sempre."
+    },
+    "str": {
+      "name": "Aluguéis de Temporada",
+      "short": "Turnovers rápidos e confiáveis para Airbnb e VRBO, com reposição de itens e relatório com fotos após cada limpeza."
+    }
+  },
+  "why": {
+    "title": "Por que Orlando escolhe a Rox",
+    "subtitle": "A Rox Cleaning nasceu de uma ideia simples: limpar como se fosse a nossa própria casa, todas as vezes.",
+    "items": [
+      {
+        "title": "Obsessão pelos Detalhes",
+        "desc": "Rodapés, saídas de ar, torneiras brilhando — limpamos os cantos que outras empresas ignoram, em toda visita."
+      },
+      {
+        "title": "Equipe de Confiança",
+        "desc": "Profissionais treinados e com antecedentes verificados, que chegam no horário e cuidam do seu espaço como se fosse deles."
+      },
+      {
+        "title": "Produtos Ecológicos",
+        "desc": "Produtos eficientes e seguros para crianças e pets, que deixam sua casa cheirosa — sem odores químicos agressivos."
+      }
+    ]
+  },
+  "how": {
+    "title": "Pedir seu orçamento grátis é fácil",
+    "subtitle": "Sem visita técnica, sem espera — a maioria dos orçamentos é respondida em até uma hora.",
+    "steps": [
+      {
+        "title": "Mande mensagem no WhatsApp",
+        "desc": "Conte sobre o seu espaço — tamanho, número de cômodos e com que frequência quer a limpeza."
+      },
+      {
+        "title": "Receba seu orçamento grátis",
+        "desc": "Respondemos rápido, com preço claro e honesto. Sem visita e sem nenhum compromisso."
+      },
+      {
+        "title": "Aproveite seu espaço impecável",
+        "desc": "Relaxe enquanto nossa equipe segurada deixa sua casa ou empresa brilhando, no seu horário."
+      }
+    ],
+    "cta": "Começar agora no WhatsApp"
+  },
+  "strHighlight": {
+    "kicker": "Para anfitriões de Airbnb e VRBO",
+    "title": "Turnovers que protegem sua avaliação 5 estrelas",
+    "desc": "Entre um hóspede e outro, cada minuto conta. A Rox é especialista em limpeza de aluguéis de temporada em Orlando, Kissimmee e na região da Disney — para o seu anúncio estar sempre impecável no próximo check-in.",
+    "bullets": [
+      "Turnovers no mesmo dia, sincronizados com seu calendário de reservas",
+      "Reposição de essenciais — toalhas, roupas de cama, amenities e suprimentos",
+      "Relatório com fotos após cada limpeza, com alertas imediatos de danos"
+    ],
+    "cta": "Orçamento de Turnover pelo WhatsApp",
+    "link": "Veja tudo o que está incluído"
+  },
+  "testimonials": {
+    "title": "O que nossos clientes dizem",
+    "subtitle": "Depoimentos reais de casas, escritórios e aluguéis de temporada na Flórida Central.",
+    "ariaStars": "Avaliação 5 de 5 estrelas",
+    "items": [
+      {
+        "name": "Melissa R.",
+        "role": "Proprietária · Lake Nona",
+        "text": "A Rox limpa nossa casa quinzenalmente há meses e ela nunca esteve tão bonita. Elas lembram de cada preferência nossa e a casa fica cheirosa depois de cada visita."
+      },
+      {
+        "name": "Carlos M.",
+        "role": "Anfitrião de Airbnb · Kissimmee",
+        "text": "Administro seis Airbnbs e a Rox cuida de todos os turnovers. O relatório com fotos após cada limpeza me dá total tranquilidade — meus hóspedes elogiam a limpeza o tempo todo."
+      },
+      {
+        "name": "Jennifer T.",
+        "role": "Gerente de escritório · Centro de Orlando",
+        "text": "Nosso escritório nunca esteve tão consistentemente limpo. Elas vêm fora do expediente, nunca faltam, e a equipe toda é extremamente profissional e gentil."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "subtitle": "Ficou alguma dúvida? É só mandar mensagem no WhatsApp — respondemos rapidinho.",
+    "items": [
+      {
+        "q": "Quanto custa uma limpeza?",
+        "a": "Cada espaço é único, então o preço depende do tamanho, das condições e da frequência. Mande alguns detalhes pelo WhatsApp e receba um orçamento grátis e sem compromisso — geralmente em até uma hora."
+      },
+      {
+        "q": "O que está incluído na limpeza padrão?",
+        "a": "Todos os cômodos: tirar o pó, aspirar e passar pano; banheiros e cozinha totalmente higienizados; espelhos e superfícies polidos; e lixo retirado. A faxina pesada inclui rodapés, interior de eletrodomésticos e mais."
+      },
+      {
+        "q": "Quais produtos vocês usam?",
+        "a": "Usamos produtos profissionais e ecológicos, seguros para crianças e pets. Se você prefere produtos específicos ou tem alergias, ajustamos sem problema — é só avisar."
+      },
+      {
+        "q": "Quais regiões vocês atendem?",
+        "a": "Orlando, Kissimmee e comunidades vizinhas da Flórida Central — incluindo Lake Nona, Winter Garden, Dr. Phillips, Celebration, Davenport e Champions Gate. Não tem certeza sobre a sua região? É só perguntar!"
+      },
+      {
+        "q": "Tem desconto para limpeza recorrente?",
+        "a": "Tem sim! Clientes semanais e quinzenais recebem tarifas especiais, prioridade na agenda e a mesma equipe de confiança em todas as visitas."
+      },
+      {
+        "q": "Como faço para agendar?",
+        "a": "É só tocar no botão do WhatsApp e dizer oi. Confirmamos seu orçamento, escolhemos juntos o melhor dia e horário, e pronto — sem contrato, sem burocracia."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Prefere escrever? Envie uma mensagem",
+    "subtitle": "Preencha o formulário e respondemos em até um dia útil. Para um orçamento mais rápido, o WhatsApp é o melhor caminho.",
+    "name": "Nome completo",
+    "namePlaceholder": "Maria Silva",
+    "phone": "Telefone / WhatsApp",
+    "phonePlaceholder": "(407) 555-0123",
+    "service": "Serviço desejado",
+    "serviceOptions": {
+      "house": "Limpeza residencial",
+      "office": "Limpeza de escritório",
+      "store": "Limpeza de loja",
+      "str": "Turnover de aluguel de temporada",
+      "other": "Outro serviço"
+    },
+    "message": "Conte sobre o seu espaço",
+    "messagePlaceholder": "ex.: casa de 3 quartos / 2 banheiros em Kissimmee, buscando limpeza quinzenal",
+    "submit": "Quero Meu Orçamento Grátis",
+    "note": "Nunca compartilhamos suas informações com ninguém."
+  },
+  "finalCta": {
+    "title": "Pronto para um espaço impecável?",
+    "subtitle": "Receba seu orçamento grátis em minutos — sem visita e sem compromisso.",
+    "button": "Fale conosco no WhatsApp"
+  },
+  "footer": {
+    "tagline": "Limpeza profissional de casas, escritórios, lojas e aluguéis de temporada em Orlando, FL.",
+    "servicesTitle": "Serviços",
+    "areaTitle": "Área de Atendimento",
+    "areas": ["Orlando", "Kissimmee", "Lake Nona", "Winter Garden", "Dr. Phillips", "Celebration", "Davenport"],
+    "contactTitle": "Contato",
+    "hoursLabel": "Horário",
+    "hours": "Seg–Sáb · 8h–18h",
+    "rights": "Todos os direitos reservados."
+  },
+  "float": {
+    "label": "Converse com a Rox Cleaning no WhatsApp"
+  },
+  "servicePages": {
+    "backHome": "Voltar para o início",
+    "includedTitle": "O que está incluído",
+    "whoForTitle": "Perfeito para",
+    "faqTitle": "Dúvidas comuns",
+    "house": {
+      "kicker": "Limpeza Residencial · Orlando, FL",
+      "title": "Volte para uma casa que brilha",
+      "subtitle": "Limpeza recorrente, faxina pesada e limpeza de mudança em Orlando, Kissimmee e Flórida Central — feitas com capricho por uma equipe segurada e de confiança.",
+      "included": [
+        "Pó tirado de todas as superfícies, prateleiras e decoração",
+        "Carpetes, tapetes e estofados aspirados",
+        "Pisos varridos e passados com pano",
+        "Cozinha: bancadas, pia, fogão e exterior dos eletrodomésticos",
+        "Banheiros: vasos, chuveiros, banheiras e pias higienizados",
+        "Espelhos e vidros polidos",
+        "Camas arrumadas — troca de roupa de cama a pedido",
+        "Rodapés, batentes e interruptores limpos",
+        "Lixo retirado e sacos repostos",
+        "Peitoris internos e persianas sem pó",
+        "Saídas de ar e ventiladores de teto limpos",
+        "Vistoria final com nosso checklist de detalhes"
+      ],
+      "whoFor": [
+        "Famílias ocupadas que querem o fim de semana de volta",
+        "Profissionais que preferem descansar a esfregar",
+        "Idosos que querem uma ajuda confiável e cuidadosa em casa",
+        "Quem está de mudança e precisa de um recomeço limpinho"
+      ],
+      "faq": [
+        {
+          "q": "Com que frequência vocês podem limpar minha casa?",
+          "a": "Semanal, quinzenal, mensal ou avulsa — o que fizer sentido para a sua rotina. Clientes recorrentes têm tarifas especiais e a mesma equipe de confiança em todas as visitas."
+        },
+        {
+          "q": "Preciso estar em casa durante a limpeza?",
+          "a": "Não precisa. Muitos clientes deixam uma senha ou chave. Nossa equipe tem antecedentes verificados e seguro, e ao terminar trancamos tudo e confirmamos por mensagem."
+        },
+        {
+          "q": "Vocês levam os próprios produtos?",
+          "a": "Sim — chegamos com todo o equipamento profissional e produtos ecológicos. Se preferir que usemos os seus produtos, é só deixá-los à vista que usamos com prazer."
+        }
+      ],
+      "ctaTitle": "Sua casa impecável está a uma mensagem de distância",
+      "ctaButton": "Quero Meu Orçamento de Limpeza Residencial"
+    },
+    "office": {
+      "kicker": "Limpeza de Escritórios · Orlando, FL",
+      "title": "Um escritório que trabalha tanto quanto você",
+      "subtitle": "Limpeza comercial confiável para escritórios em Orlando e na Flórida Central — no horário do seu negócio, com uma equipe fixa e segurada.",
+      "included": [
+        "Recepção e áreas comuns limpas e renovadas",
+        "Mesas e estações de trabalho higienizadas — papéis intocados",
+        "Salas de reunião limpas e organizadas",
+        "Copa: bancadas, pia, micro-ondas e exterior da geladeira",
+        "Banheiros totalmente higienizados e reabastecidos",
+        "Lixo e reciclagem retirados, sacos repostos",
+        "Carpetes aspirados e pisos passados com pano",
+        "Portas de vidro e divisórias polidas",
+        "Pontos de contato desinfetados: maçanetas, interruptores, corrimãos",
+        "Saídas de ar sem pó",
+        "Monitoramento de suprimentos com alertas de reposição",
+        "Atendimento fora do expediente ou de manhã cedo"
+      ],
+      "whoFor": [
+        "Escritórios pequenos e médios que querem uma equipe fixa",
+        "Consultórios e escritórios profissionais com salas de espera impecáveis",
+        "Coworkings e estúdios criativos",
+        "Empresas cansadas de serviços de limpeza que falham"
+      ],
+      "faq": [
+        {
+          "q": "Vocês limpam fora do horário comercial?",
+          "a": "Com certeza — atendemos à noite, de manhã cedo e aos fins de semana, para a sua equipe nunca precisar trabalhar ao lado de um aspirador."
+        },
+        {
+          "q": "Precisamos assinar contrato de longo prazo?",
+          "a": "Não. Trabalhamos com uma agenda recorrente simples, que você ajusta ou pausa quando quiser. Conquistamos seu negócio a cada visita."
+        },
+        {
+          "q": "Vocês são licenciados e segurados?",
+          "a": "Sim — a Rox Cleaning é totalmente licenciada e segurada, e fornecemos a documentação para seus registros antes de começar."
+        }
+      ],
+      "ctaTitle": "Dê à sua equipe um lugar mais limpo para trabalhar",
+      "ctaButton": "Quero Meu Orçamento de Limpeza de Escritório"
+    },
+    "store": {
+      "kicker": "Limpeza de Lojas · Orlando, FL",
+      "title": "A primeira impressão começa com uma loja impecável",
+      "subtitle": "Limpeza de varejo que mantém sua loja brilhando em Orlando e Kissimmee — porque o cliente julga o seu negócio no segundo em que entra.",
+      "included": [
+        "Entrada e vitrines limpas por dentro e por fora",
+        "Salão de vendas varrido, aspirado e com pano passado",
+        "Prateleiras e expositores sem pó — mercadorias tratadas com cuidado",
+        "Balcões de caixa e áreas de POS higienizados",
+        "Provadores limpos e renovados",
+        "Espelhos polidos sem manchas",
+        "Banheiros higienizados e reabastecidos",
+        "Copa e escritório dos fundos organizados",
+        "Lixo retirado e sacos repostos",
+        "Superfícies de contato desinfetadas",
+        "Rodapés e cantos detalhados",
+        "Atendimento antes de abrir ou depois de fechar"
+      ],
+      "whoFor": [
+        "Boutiques e lojas de varejo",
+        "Salões de beleza, spas e barbearias",
+        "Showrooms e galerias",
+        "Qualquer loja onde a apresentação gera vendas"
+      ],
+      "faq": [
+        {
+          "q": "Vocês limpam antes de abrirmos ou depois que fechamos?",
+          "a": "Sim — a maioria dos nossos clientes de varejo prefere visitas de manhã cedo ou após o fechamento, para a loja estar sempre pronta na hora de abrir as portas."
+        },
+        {
+          "q": "A equipe toma cuidado com mercadorias e expositores?",
+          "a": "Todo cuidado. Nossa equipe é treinada para trabalhar ao redor de expositores e segue qualquer orientação de manuseio que você passar."
+        },
+        {
+          "q": "Vocês fazem limpeza avulsa e recorrente?",
+          "a": "As duas. Muitas lojas começam com uma faxina pesada avulsa e depois passam para a agenda semanal — clientes recorrentes têm tarifas especiais."
+        }
+      ],
+      "ctaTitle": "Deixe sua loja brilhando antes do próximo cliente entrar",
+      "ctaButton": "Quero Meu Orçamento de Limpeza de Loja"
+    },
+    "str": {
+      "kicker": "Aluguéis de Temporada · Orlando e Kissimmee",
+      "title": "Turnovers 5 estrelas para o seu aluguel de temporada",
+      "subtitle": "Limpeza de turnover no mesmo dia para Airbnb e VRBO em Orlando, Kissimmee, Davenport e região da Disney — com reposição de itens e relatório com fotos após cada limpeza.",
+      "included": [
+        "Limpeza completa de todos os cômodos entre hóspedes",
+        "Roupa de cama trocada com arrumação estilo hotel",
+        "Toalhas trocadas, dobradas e organizadas",
+        "Cozinha zerada: louças, eletrodomésticos e bancadas",
+        "Banheiros higienizados e reorganizados",
+        "Reposição de essenciais: amenities, papel, café",
+        "Lixo retirado e lixeiras renovadas",
+        "Alertas de danos e manutenção com fotos",
+        "Relatório com fotos enviado após cada limpeza",
+        "Ambientação igual às fotos do seu anúncio",
+        "Achados e perdidos dos hóspedes organizados",
+        "Agenda sincronizada com seu calendário de reservas"
+      ],
+      "whoFor": [
+        "Anfitriões de Airbnb e VRBO — uma unidade ou um portfólio inteiro",
+        "Administradores de imóveis na região da Disney e Kissimmee",
+        "Proprietários de fora que precisam de olhos de confiança no imóvel",
+        "Anfitriões que já sofreram com faxineiras que não aparecem"
+      ],
+      "faq": [
+        {
+          "q": "Vocês fazem turnover no mesmo dia?",
+          "a": "Sim — turnover no mesmo dia é a nossa especialidade. Somos estruturados para a janela das 10h às 16h entre check-out e check-in, mesmo na alta temporada."
+        },
+        {
+          "q": "Como vocês sabem quando limpar?",
+          "a": "Sincronizamos com seu calendário do Airbnb/VRBO ou sistema de gestão, e cada limpeza entra na agenda automaticamente assim que uma reserva é feita."
+        },
+        {
+          "q": "E se um hóspede danificar algo?",
+          "a": "Documentamos com fotos e avisamos você na hora — para você abrir a reclamação na plataforma antes do próximo check-in."
+        }
+      ],
+      "ctaTitle": "Nunca mais se estresse com um turnover",
+      "ctaButton": "Quero Meu Orçamento de Turnover no WhatsApp"
+    }
+  }
+}

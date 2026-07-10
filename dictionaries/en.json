@@ -1,0 +1,359 @@
+{
+  "waMessage": "Hi! I'd like a free cleaning quote 😊",
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "quote": "Get a Free Quote",
+    "call": "Call us",
+    "menu": "Open menu",
+    "closeMenu": "Close menu",
+    "langLabel": "Change language"
+  },
+  "hero": {
+    "badge": "Proudly serving Orlando & Kissimmee, FL",
+    "title": "A Spotless Space, Without Lifting a Finger",
+    "subtitle": "Professional house, office and vacation rental cleaning across Orlando, Kissimmee and Central Florida — delivered by a friendly, licensed and insured team you can trust.",
+    "ctaPrimary": "Get Free Quote on WhatsApp",
+    "ctaSecondary": "See Our Services"
+  },
+  "trust": [
+    { "title": "Licensed & Insured", "desc": "Fully covered for total peace of mind" },
+    { "title": "5-Star Rated", "desc": "Loved by homeowners and hosts alike" },
+    { "title": "Flexible Scheduling", "desc": "Weekly, bi-weekly or one-time cleans" },
+    { "title": "Satisfaction Guaranteed", "desc": "Not thrilled? We'll re-clean it free" }
+  ],
+  "servicesSection": {
+    "title": "Cleaning services made for you",
+    "subtitle": "From cozy homes to busy storefronts, we keep every space in Central Florida fresh, healthy and guest-ready.",
+    "learnMore": "Learn more"
+  },
+  "serviceCards": {
+    "house": {
+      "name": "House Cleaning",
+      "short": "Recurring housekeeping and deep cleans that keep your home fresh, healthy and truly relaxing."
+    },
+    "office": {
+      "name": "Office Cleaning",
+      "short": "A consistently clean office your team and clients will notice — scheduled around your business hours."
+    },
+    "store": {
+      "name": "Store Cleaning",
+      "short": "Spotless floors, glass and fitting rooms that make shoppers feel welcome and keep them coming back."
+    },
+    "str": {
+      "name": "Vacation Rental Turnovers",
+      "short": "Fast, reliable Airbnb & VRBO turnovers with restocking and a photo report after every clean."
+    }
+  },
+  "why": {
+    "title": "Why Orlando chooses Rox",
+    "subtitle": "We built Rox Cleaning around one simple idea: clean like it's our own home, every single time.",
+    "items": [
+      {
+        "title": "Detail-Obsessed",
+        "desc": "Baseboards, vents, faucet shine — we clean the corners other companies skip, on every single visit."
+      },
+      {
+        "title": "Reliable Team",
+        "desc": "Background-checked, trained professionals who show up on time and treat your space like their own."
+      },
+      {
+        "title": "Eco-Friendly Products",
+        "desc": "Effective products that are safe for kids and pets, leaving your home fresh — never full of harsh fumes."
+      }
+    ]
+  },
+  "how": {
+    "title": "Getting your free quote is easy",
+    "subtitle": "No site visits, no waiting around — most quotes are answered within the hour.",
+    "steps": [
+      {
+        "title": "Message us on WhatsApp",
+        "desc": "Tell us about your space — size, number of rooms and how often you'd like it cleaned."
+      },
+      {
+        "title": "Get your free quote",
+        "desc": "We reply fast with clear, honest pricing. No visit needed and zero commitment."
+      },
+      {
+        "title": "Enjoy your spotless space",
+        "desc": "Relax while our insured team makes your home or business shine, on your schedule."
+      }
+    ],
+    "cta": "Start on WhatsApp now"
+  },
+  "strHighlight": {
+    "kicker": "For Airbnb & VRBO hosts",
+    "title": "Turnovers that protect your 5-star rating",
+    "desc": "Between guests, every minute counts. Rox specializes in vacation rental cleaning across Orlando, Kissimmee and the Disney corridor — so your listing is always photo-ready for the next check-in.",
+    "bullets": [
+      "Same-day turnovers, synced to your booking calendar",
+      "Restocking of essentials — towels, linens, toiletries and supplies",
+      "Photo report after every clean, plus instant damage alerts"
+    ],
+    "cta": "Get a Turnover Quote on WhatsApp",
+    "link": "See everything included"
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "Real feedback from homes, offices and vacation rentals across Central Florida.",
+    "ariaStars": "Rated 5 out of 5 stars",
+    "items": [
+      {
+        "name": "Melissa R.",
+        "role": "Homeowner · Lake Nona",
+        "text": "Rox has cleaned our home bi-weekly for months and it has never looked better. They remember every little preference and the house smells amazing after every visit."
+      },
+      {
+        "name": "Carlos M.",
+        "role": "Airbnb host · Kissimmee",
+        "text": "I manage six Airbnbs and Rox handles every turnover. The photo report after each clean gives me total peace of mind — my guest reviews mention cleanliness constantly."
+      },
+      {
+        "name": "Jennifer T.",
+        "role": "Office manager · Downtown Orlando",
+        "text": "Our office has never been this consistently clean. They come after hours, never miss a day, and the whole team is unfailingly professional and kind."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Anything else on your mind? Just message us on WhatsApp — we answer fast.",
+    "items": [
+      {
+        "q": "How much does a cleaning cost?",
+        "a": "Every space is different, so we price by size, condition and frequency. Send us a few details on WhatsApp and you'll get a free, no-obligation quote — usually within the hour."
+      },
+      {
+        "q": "What's included in a standard cleaning?",
+        "a": "All rooms are dusted, vacuumed and mopped; bathrooms and kitchen are fully sanitized; mirrors and surfaces polished; and trash removed. Deep cleans add baseboards, inside appliances and more."
+      },
+      {
+        "q": "What products do you use?",
+        "a": "We use professional, eco-friendly products that are safe for kids and pets. If you prefer specific products or have allergies, we're happy to adjust — just let us know."
+      },
+      {
+        "q": "Which areas do you serve?",
+        "a": "Orlando, Kissimmee and surrounding Central Florida communities — including Lake Nona, Winter Garden, Dr. Phillips, Celebration, Davenport and Champions Gate. Not sure about your area? Just ask!"
+      },
+      {
+        "q": "Do you offer discounts for recurring service?",
+        "a": "Yes! Weekly and bi-weekly clients receive preferred rates, priority scheduling and the same trusted team on every visit."
+      },
+      {
+        "q": "How do I book a cleaning?",
+        "a": "Just tap the WhatsApp button and say hi. We'll confirm your quote, pick a date and time that works for you, and you're all set — no contracts required."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Prefer to write? Send us a message",
+    "subtitle": "Fill out the form and we'll get back to you within one business day. For the fastest quote, WhatsApp is the way to go.",
+    "name": "Full name",
+    "namePlaceholder": "Jane Smith",
+    "phone": "Phone / WhatsApp",
+    "phonePlaceholder": "(407) 555-0123",
+    "service": "Service needed",
+    "serviceOptions": {
+      "house": "House cleaning",
+      "office": "Office cleaning",
+      "store": "Store / retail cleaning",
+      "str": "Vacation rental turnover",
+      "other": "Something else"
+    },
+    "message": "Tell us about your space",
+    "messagePlaceholder": "e.g. 3 bed / 2 bath house in Kissimmee, looking for bi-weekly cleaning",
+    "submit": "Request My Free Quote",
+    "note": "We'll never share your information with anyone."
+  },
+  "finalCta": {
+    "title": "Ready for a spotless space?",
+    "subtitle": "Get your free quote in minutes — no visit needed, no strings attached.",
+    "button": "Chat with us on WhatsApp"
+  },
+  "footer": {
+    "tagline": "Professional cleaning for homes, offices, stores and vacation rentals in Orlando, FL.",
+    "servicesTitle": "Services",
+    "areaTitle": "Service Area",
+    "areas": ["Orlando", "Kissimmee", "Lake Nona", "Winter Garden", "Dr. Phillips", "Celebration", "Davenport"],
+    "contactTitle": "Contact",
+    "hoursLabel": "Hours",
+    "hours": "Mon–Sat · 8am–6pm",
+    "rights": "All rights reserved."
+  },
+  "float": {
+    "label": "Chat with Rox Cleaning on WhatsApp"
+  },
+  "servicePages": {
+    "backHome": "Back to home",
+    "includedTitle": "What's included",
+    "whoForTitle": "Perfect for",
+    "faqTitle": "Common questions",
+    "house": {
+      "kicker": "House Cleaning · Orlando, FL",
+      "title": "Come home to a house that sparkles",
+      "subtitle": "Recurring housekeeping, deep cleans and move-in/move-out cleaning across Orlando, Kissimmee and Central Florida — done right by a trusted, insured team.",
+      "included": [
+        "Dusting of all surfaces, shelves and décor",
+        "Vacuuming of carpets, rugs and upholstery",
+        "Sweeping and mopping of hard floors",
+        "Kitchen: counters, sink, stovetop and appliance exteriors",
+        "Bathrooms: toilets, showers, tubs and vanities sanitized",
+        "Mirrors and glass surfaces polished",
+        "Beds made — linens changed on request",
+        "Baseboards, door frames and light switches wiped",
+        "Trash emptied and bins relined",
+        "Interior windowsills and blinds dusted",
+        "Air vents and ceiling fans dusted",
+        "Final walkthrough with our detail checklist"
+      ],
+      "whoFor": [
+        "Busy families who want their weekends back",
+        "Professionals who'd rather relax than scrub",
+        "Seniors who want reliable, gentle help at home",
+        "Anyone moving in or out who needs a fresh start"
+      ],
+      "faq": [
+        {
+          "q": "How often can you clean my home?",
+          "a": "Weekly, bi-weekly, monthly or one-time — whatever fits your life. Recurring clients get preferred rates and the same trusted team on every visit."
+        },
+        {
+          "q": "Do I need to be home during the cleaning?",
+          "a": "Not at all. Many clients share a door code or key. Our team is background-checked and insured, and we lock up and confirm by message when we're done."
+        },
+        {
+          "q": "Do you bring your own supplies?",
+          "a": "Yes — we arrive with all professional equipment and eco-friendly products. If you prefer we use your products, just leave them out and we'll happily use those instead."
+        }
+      ],
+      "ctaTitle": "Your spotless home is one message away",
+      "ctaButton": "Get My Free House Cleaning Quote"
+    },
+    "office": {
+      "kicker": "Office Cleaning · Orlando, FL",
+      "title": "A workplace that works as hard as you do",
+      "subtitle": "Reliable commercial cleaning for offices in Orlando and Central Florida — scheduled around your business hours, with a consistent, insured crew.",
+      "included": [
+        "Reception and common areas dusted and refreshed",
+        "Desks and workstations wiped — papers left untouched",
+        "Meeting rooms cleaned and reset",
+        "Break room: counters, sink, microwave and fridge exterior",
+        "Restrooms fully sanitized and restocked",
+        "Trash and recycling emptied, bins relined",
+        "Carpets vacuumed and hard floors mopped",
+        "Glass doors and partitions polished",
+        "High-touch points disinfected: handles, switches, rails",
+        "Air vents dusted",
+        "Supply monitoring with restock alerts",
+        "After-hours or early-morning scheduling available"
+      ],
+      "whoFor": [
+        "Small and mid-size offices that want a consistent crew",
+        "Professional practices that need spotless waiting rooms",
+        "Coworking spaces and creative studios",
+        "Businesses tired of unreliable janitorial services"
+      ],
+      "faq": [
+        {
+          "q": "Can you clean outside business hours?",
+          "a": "Absolutely — evenings, early mornings and weekends are all available, so your team never works around a vacuum."
+        },
+        {
+          "q": "Do we need to sign a long-term contract?",
+          "a": "No. We work on a simple recurring schedule you can adjust or pause anytime. We keep your business by earning it every visit."
+        },
+        {
+          "q": "Are you licensed and insured?",
+          "a": "Yes — Rox Cleaning is fully licensed and insured, and we're happy to provide documentation for your records before we start."
+        }
+      ],
+      "ctaTitle": "Give your team a cleaner place to work",
+      "ctaButton": "Get My Free Office Cleaning Quote"
+    },
+    "store": {
+      "kicker": "Store & Retail Cleaning · Orlando, FL",
+      "title": "First impressions start with a spotless store",
+      "subtitle": "Retail cleaning that keeps your storefront shining in Orlando and Kissimmee — because customers judge your business the moment they walk in.",
+      "included": [
+        "Entrance and storefront glass cleaned inside and out",
+        "Sales floor swept, mopped and vacuumed",
+        "Shelving and displays dusted — merchandise handled with care",
+        "Checkout counters and POS areas sanitized",
+        "Fitting rooms cleaned and refreshed",
+        "Mirrors polished streak-free",
+        "Restrooms sanitized and restocked",
+        "Break room and back office tidied",
+        "Trash removed and bins relined",
+        "High-touch surfaces disinfected",
+        "Baseboards and corners detailed",
+        "Before-opening or after-closing scheduling"
+      ],
+      "whoFor": [
+        "Boutiques and retail shops",
+        "Salons, spas and barbershops",
+        "Showrooms and galleries",
+        "Any storefront where presentation drives sales"
+      ],
+      "faq": [
+        {
+          "q": "Can you clean before we open or after we close?",
+          "a": "Yes — most of our retail clients choose early-morning or after-closing visits so the store is always ready when the doors open."
+        },
+        {
+          "q": "Will your team work around merchandise and displays?",
+          "a": "Carefully, yes. Our cleaners are trained to work around product displays and will follow any handling guidelines you give us."
+        },
+        {
+          "q": "Do you offer one-time and recurring service?",
+          "a": "Both. Many stores start with a one-time deep clean and move to a weekly schedule — recurring clients get preferred rates."
+        }
+      ],
+      "ctaTitle": "Make your store shine before the next customer walks in",
+      "ctaButton": "Get My Free Store Cleaning Quote"
+    },
+    "str": {
+      "kicker": "Vacation Rental Cleaning · Orlando & Kissimmee",
+      "title": "5-star turnovers for your vacation rental",
+      "subtitle": "Same-day Airbnb and VRBO turnover cleaning in Orlando, Kissimmee, Davenport and the Disney corridor — with restocking and a photo report after every clean.",
+      "included": [
+        "Full clean of every room between guests",
+        "Fresh linens and hotel-style bed making",
+        "Towels replaced, folded and staged",
+        "Kitchen reset: dishes, appliances and counters",
+        "Bathrooms sanitized and restaged",
+        "Essentials restocked: toiletries, paper goods, coffee",
+        "Trash out and bins refreshed",
+        "Damage and maintenance alerts with photos",
+        "Photo report sent after every clean",
+        "Staging matched to your listing photos",
+        "Lost & found handling for guest items",
+        "Scheduling synced to your booking calendar"
+      ],
+      "whoFor": [
+        "Airbnb & VRBO hosts — single unit or a full portfolio",
+        "Property managers in the Disney and Kissimmee corridor",
+        "Out-of-state owners who need trusted eyes on the property",
+        "Hosts who've been burned by no-show cleaners"
+      ],
+      "faq": [
+        {
+          "q": "Can you handle same-day turnovers?",
+          "a": "Yes — same-day turnovers are our specialty. We're built for the 10am–4pm window between check-out and check-in, even in peak season."
+        },
+        {
+          "q": "How do you know when to clean?",
+          "a": "We sync with your Airbnb/VRBO calendar or property management system, so every clean is scheduled automatically the moment a booking comes in."
+        },
+        {
+          "q": "What happens if a guest damages something?",
+          "a": "We document it with photos and alert you immediately — so you can file a claim with the platform before the next guest checks in."
+        }
+      ],
+      "ctaTitle": "Never stress about a turnover again",
+      "ctaButton": "Get My Turnover Quote on WhatsApp"
+    }
+  }
+}
