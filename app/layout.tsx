@@ -49,7 +49,7 @@ const localBusinessJsonLd = {
   name: SITE_NAME,
   url: SITE_URL,
   image: `${SITE_URL}/og.png`,
-  logo: `${SITE_URL}/rox_horizontal.svg`,
+  logo: `${SITE_URL}/rox_horizontal.png`,
   telephone: PHONE_E164,
   email: EMAIL,
   priceRange: "$$",

@@ -32,9 +32,9 @@ export function Footer() {
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/rox_horizontal.svg"
+            src="/rox_horizontal.png"
             alt="Rox Cleaning logo"
-            width={145}
+            width={120}
             height={40}
             className="h-10 w-auto"
           />
