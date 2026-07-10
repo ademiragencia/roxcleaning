@@ -1,4 +1,4 @@
-export const SITE_URL = "https://roxcleaning.com"; // TODO: replace with the final production domain
+export const SITE_URL = "https://www.roxcleaningusa.com"; // production domain (primary; apex redirects here)
 export const SITE_NAME = "Rox Cleaning";
 
 export const PHONE_DISPLAY = "+1 (407) 881-9431";
