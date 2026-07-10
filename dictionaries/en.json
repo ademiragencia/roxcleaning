@@ -1,12 +1,14 @@
 {
-  "waMessage": "Hi! I'd like a free cleaning quote 😊",
+  "smsMessage": "Hi! I'd like a free cleaning estimate 😊",
+  "emailSubject": "Free cleaning estimate request",
   "nav": {
     "services": "Services",
     "about": "About",
     "reviews": "Reviews",
     "faq": "FAQ",
-    "quote": "Get a Free Quote",
+    "quote": "Free Estimate",
     "call": "Call us",
+    "text": "Text us",
     "menu": "Open menu",
     "closeMenu": "Close menu",
     "langLabel": "Change language"
@@ -15,8 +17,9 @@
     "badge": "Proudly serving Orlando & Kissimmee, FL",
     "title": "A Spotless Space, Without Lifting a Finger",
     "subtitle": "Professional house, office and vacation rental cleaning across Orlando, Kissimmee and Central Florida — delivered by a friendly, licensed and insured team you can trust.",
-    "ctaPrimary": "Get Free Quote on WhatsApp",
-    "ctaSecondary": "See Our Services"
+    "ctaPrimary": "Get a Free Estimate",
+    "ctaSecondary": "See Our Services",
+    "orText": "or text us at"
   },
   "trust": [
     { "title": "Licensed & Insured", "desc": "Fully covered for total peace of mind" },
@@ -66,23 +69,23 @@
     ]
   },
   "how": {
-    "title": "Getting your free quote is easy",
-    "subtitle": "No site visits, no waiting around — most quotes are answered within the hour.",
+    "title": "Getting your free estimate is easy",
+    "subtitle": "No site visits, no waiting around — most estimates are answered within the hour.",
     "steps": [
       {
-        "title": "Message us on WhatsApp",
-        "desc": "Tell us about your space — size, number of rooms and how often you'd like it cleaned."
+        "title": "Tell us about your space",
+        "desc": "Fill out the quick estimate form below, or send us a text. It takes about 60 seconds."
       },
       {
-        "title": "Get your free quote",
-        "desc": "We reply fast with clear, honest pricing. No visit needed and zero commitment."
+        "title": "Get your free estimate",
+        "desc": "We reply fast by text or email with clear, honest pricing. No visit needed and zero commitment."
       },
       {
         "title": "Enjoy your spotless space",
         "desc": "Relax while our insured team makes your home or business shine, on your schedule."
       }
     ],
-    "cta": "Start on WhatsApp now"
+    "cta": "Get My Free Estimate"
   },
   "strHighlight": {
     "kicker": "For Airbnb & VRBO hosts",
@@ -93,7 +96,7 @@
       "Restocking of essentials — towels, linens, toiletries and supplies",
       "Photo report after every clean, plus instant damage alerts"
     ],
-    "cta": "Get a Turnover Quote on WhatsApp",
+    "cta": "Get a Turnover Estimate",
     "link": "See everything included"
   },
   "testimonials": {
@@ -120,11 +123,11 @@
   },
   "faq": {
     "title": "Frequently asked questions",
-    "subtitle": "Anything else on your mind? Just message us on WhatsApp — we answer fast.",
+    "subtitle": "Anything else on your mind? Just call, text or email us — we answer fast.",
     "items": [
       {
         "q": "How much does a cleaning cost?",
-        "a": "Every space is different, so we price by size, condition and frequency. Send us a few details on WhatsApp and you'll get a free, no-obligation quote — usually within the hour."
+        "a": "Every space is different, so we price by size, condition and frequency. Fill out our quick estimate form or send us a text and you'll get a free, no-obligation estimate — usually within the hour."
       },
       {
         "q": "What's included in a standard cleaning?",
@@ -144,34 +147,55 @@
       },
       {
         "q": "How do I book a cleaning?",
-        "a": "Just tap the WhatsApp button and say hi. We'll confirm your quote, pick a date and time that works for you, and you're all set — no contracts required."
+        "a": "Fill out the free estimate form, or simply call or text us. We'll confirm your price, pick a date and time that works for you, and you're all set — no contracts required."
       }
     ]
   },
-  "contact": {
-    "title": "Prefer to write? Send us a message",
-    "subtitle": "Fill out the form and we'll get back to you within one business day. For the fastest quote, WhatsApp is the way to go.",
+  "estimate": {
+    "title": "Get your free estimate",
+    "subtitle": "Tell us a bit about your space and we'll text or email you a free, no-obligation estimate — usually within the hour.",
     "name": "Full name",
     "namePlaceholder": "Jane Smith",
-    "phone": "Phone / WhatsApp",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "phone": "Phone (for text or call)",
     "phonePlaceholder": "(407) 555-0123",
-    "service": "Service needed",
-    "serviceOptions": {
-      "house": "House cleaning",
-      "office": "Office cleaning",
-      "store": "Store / retail cleaning",
-      "str": "Vacation rental turnover",
-      "other": "Something else"
+    "location": "Location (city or neighborhood)",
+    "locationPlaceholder": "e.g. Kissimmee, FL",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "cleaningType": "Type of cleaning",
+    "cleaningTypeOptions": {
+      "regular": "Regular cleaning",
+      "deep": "Deep cleaning"
     },
-    "message": "Tell us about your space",
-    "messagePlaceholder": "e.g. 3 bed / 2 bath house in Kissimmee, looking for bi-weekly cleaning",
-    "submit": "Request My Free Quote",
-    "note": "We'll never share your information with anyone."
+    "kids": "Kids at home?",
+    "pets": "Pets at home?",
+    "yes": "Yes",
+    "no": "No",
+    "frequency": "How often?",
+    "frequencyOptions": {
+      "weekly": "Weekly",
+      "twice": "Twice a month",
+      "once": "Once a month",
+      "other": "Other frequency"
+    },
+    "message": "Anything else? (optional)",
+    "messagePlaceholder": "Parking, access, special requests, move-in/move-out…",
+    "select": "Select…",
+    "submit": "Get My Free Estimate",
+    "sending": "Sending…",
+    "successTitle": "Thank you! 🎉",
+    "successBody": "We've received your request and will reply with your free estimate shortly — usually within the hour during business hours.",
+    "errorTitle": "Hmm, that didn't go through",
+    "errorBody": "Please text or email us directly and we'll get you an estimate right away.",
+    "note": "No spam, ever. We only use your details to send your estimate.",
+    "orReach": "Prefer to talk? Reach us directly:"
   },
   "finalCta": {
     "title": "Ready for a spotless space?",
-    "subtitle": "Get your free quote in minutes — no visit needed, no strings attached.",
-    "button": "Chat with us on WhatsApp"
+    "subtitle": "Get your free estimate in minutes — no visit needed, no strings attached.",
+    "button": "Get Your Free Estimate"
   },
   "footer": {
     "tagline": "Professional cleaning for homes, offices, stores and vacation rentals in Orlando, FL.",
@@ -179,12 +203,14 @@
     "areaTitle": "Service Area",
     "areas": ["Orlando", "Kissimmee", "Lake Nona", "Winter Garden", "Dr. Phillips", "Celebration", "Davenport"],
     "contactTitle": "Contact",
+    "callLabel": "Call",
+    "textLabel": "Text",
     "hoursLabel": "Hours",
     "hours": "Mon–Sat · 8am–6pm",
     "rights": "All rights reserved."
   },
   "float": {
-    "label": "Chat with Rox Cleaning on WhatsApp"
+    "label": "Get a free estimate"
   },
   "servicePages": {
     "backHome": "Back to home",
@@ -222,7 +248,7 @@
         },
         {
           "q": "Do I need to be home during the cleaning?",
-          "a": "Not at all. Many clients share a door code or key. Our team is background-checked and insured, and we lock up and confirm by message when we're done."
+          "a": "Not at all. Many clients share a door code or key. Our team is background-checked and insured, and we lock up and confirm by text when we're done."
         },
         {
           "q": "Do you bring your own supplies?",
@@ -230,7 +256,7 @@
         }
       ],
       "ctaTitle": "Your spotless home is one message away",
-      "ctaButton": "Get My Free House Cleaning Quote"
+      "ctaButton": "Get My Free House Cleaning Estimate"
     },
     "office": {
       "kicker": "Office Cleaning · Orlando, FL",
@@ -271,7 +297,7 @@
         }
       ],
       "ctaTitle": "Give your team a cleaner place to work",
-      "ctaButton": "Get My Free Office Cleaning Quote"
+      "ctaButton": "Get My Free Office Cleaning Estimate"
     },
     "store": {
       "kicker": "Store & Retail Cleaning · Orlando, FL",
@@ -312,7 +338,7 @@
         }
       ],
       "ctaTitle": "Make your store shine before the next customer walks in",
-      "ctaButton": "Get My Free Store Cleaning Quote"
+      "ctaButton": "Get My Free Store Cleaning Estimate"
     },
     "str": {
       "kicker": "Vacation Rental Cleaning · Orlando & Kissimmee",
@@ -353,7 +379,7 @@
         }
       ],
       "ctaTitle": "Never stress about a turnover again",
-      "ctaButton": "Get My Turnover Quote on WhatsApp"
+      "ctaButton": "Get My Turnover Estimate"
     }
   }
 }

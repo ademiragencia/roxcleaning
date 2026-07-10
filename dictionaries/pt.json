@@ -1,12 +1,14 @@
 {
-  "waMessage": "Olá! Gostaria de um orçamento de limpeza grátis 😊",
+  "smsMessage": "Olá! Gostaria de uma estimativa de limpeza grátis 😊",
+  "emailSubject": "Pedido de estimativa de limpeza grátis",
   "nav": {
     "services": "Serviços",
     "about": "Sobre",
     "reviews": "Avaliações",
     "faq": "Dúvidas",
-    "quote": "Orçamento Grátis",
-    "call": "Ligue para nós",
+    "quote": "Estimativa Grátis",
+    "call": "Ligar",
+    "text": "Enviar SMS",
     "menu": "Abrir menu",
     "closeMenu": "Fechar menu",
     "langLabel": "Mudar idioma"
@@ -15,8 +17,9 @@
     "badge": "Atendendo Orlando e Kissimmee, FL",
     "title": "Sua casa impecável, sem você levantar um dedo",
     "subtitle": "Limpeza profissional de casas, escritórios e aluguéis de temporada em Orlando, Kissimmee e Flórida Central — com uma equipe licenciada, segurada e de total confiança.",
-    "ctaPrimary": "Orçamento Grátis pelo WhatsApp",
-    "ctaSecondary": "Conheça Nossos Serviços"
+    "ctaPrimary": "Peça uma Estimativa Grátis",
+    "ctaSecondary": "Conheça Nossos Serviços",
+    "orText": "ou mande um SMS para"
   },
   "trust": [
     { "title": "Licenciada e Segurada", "desc": "Cobertura completa para sua tranquilidade" },
@@ -66,23 +69,23 @@
     ]
   },
   "how": {
-    "title": "Pedir seu orçamento grátis é fácil",
-    "subtitle": "Sem visita técnica, sem espera — a maioria dos orçamentos é respondida em até uma hora.",
+    "title": "Pedir sua estimativa grátis é fácil",
+    "subtitle": "Sem visita técnica, sem espera — a maioria das estimativas é respondida em até uma hora.",
     "steps": [
       {
-        "title": "Mande mensagem no WhatsApp",
-        "desc": "Conte sobre o seu espaço — tamanho, número de cômodos e com que frequência quer a limpeza."
+        "title": "Conte sobre o seu espaço",
+        "desc": "Preencha o formulário rápido de estimativa abaixo, ou mande um SMS. Leva cerca de 60 segundos."
       },
       {
-        "title": "Receba seu orçamento grátis",
-        "desc": "Respondemos rápido, com preço claro e honesto. Sem visita e sem nenhum compromisso."
+        "title": "Receba sua estimativa grátis",
+        "desc": "Respondemos rápido por SMS ou e-mail, com preço claro e honesto. Sem visita e sem nenhum compromisso."
       },
       {
         "title": "Aproveite seu espaço impecável",
         "desc": "Relaxe enquanto nossa equipe segurada deixa sua casa ou empresa brilhando, no seu horário."
       }
     ],
-    "cta": "Começar agora no WhatsApp"
+    "cta": "Quero Minha Estimativa Grátis"
   },
   "strHighlight": {
     "kicker": "Para anfitriões de Airbnb e VRBO",
@@ -93,7 +96,7 @@
       "Reposição de essenciais — toalhas, roupas de cama, amenities e suprimentos",
       "Relatório com fotos após cada limpeza, com alertas imediatos de danos"
     ],
-    "cta": "Orçamento de Turnover pelo WhatsApp",
+    "cta": "Estimativa de Turnover Grátis",
     "link": "Veja tudo o que está incluído"
   },
   "testimonials": {
@@ -120,11 +123,11 @@
   },
   "faq": {
     "title": "Perguntas frequentes",
-    "subtitle": "Ficou alguma dúvida? É só mandar mensagem no WhatsApp — respondemos rapidinho.",
+    "subtitle": "Ficou alguma dúvida? É só ligar, mandar SMS ou e-mail — respondemos rapidinho.",
     "items": [
       {
         "q": "Quanto custa uma limpeza?",
-        "a": "Cada espaço é único, então o preço depende do tamanho, das condições e da frequência. Mande alguns detalhes pelo WhatsApp e receba um orçamento grátis e sem compromisso — geralmente em até uma hora."
+        "a": "Cada espaço é único, então o preço depende do tamanho, das condições e da frequência. Preencha o formulário rápido de estimativa ou mande um SMS e receba uma estimativa grátis e sem compromisso — geralmente em até uma hora."
       },
       {
         "q": "O que está incluído na limpeza padrão?",
@@ -144,34 +147,55 @@
       },
       {
         "q": "Como faço para agendar?",
-        "a": "É só tocar no botão do WhatsApp e dizer oi. Confirmamos seu orçamento, escolhemos juntos o melhor dia e horário, e pronto — sem contrato, sem burocracia."
+        "a": "Preencha o formulário de estimativa grátis, ou é só ligar ou mandar um SMS. Confirmamos seu preço, escolhemos juntos o melhor dia e horário, e pronto — sem contrato, sem burocracia."
       }
     ]
   },
-  "contact": {
-    "title": "Prefere escrever? Envie uma mensagem",
-    "subtitle": "Preencha o formulário e respondemos em até um dia útil. Para um orçamento mais rápido, o WhatsApp é o melhor caminho.",
+  "estimate": {
+    "title": "Peça sua estimativa grátis",
+    "subtitle": "Conte um pouco sobre o seu espaço e enviaremos uma estimativa grátis e sem compromisso por SMS ou e-mail — geralmente em até uma hora.",
     "name": "Nome completo",
     "namePlaceholder": "Maria Silva",
-    "phone": "Telefone / WhatsApp",
+    "email": "E-mail",
+    "emailPlaceholder": "voce@email.com",
+    "phone": "Telefone (para SMS ou ligação)",
     "phonePlaceholder": "(407) 555-0123",
-    "service": "Serviço desejado",
-    "serviceOptions": {
-      "house": "Limpeza residencial",
-      "office": "Limpeza de escritório",
-      "store": "Limpeza de loja",
-      "str": "Turnover de aluguel de temporada",
-      "other": "Outro serviço"
+    "location": "Local (cidade ou bairro)",
+    "locationPlaceholder": "ex.: Kissimmee, FL",
+    "bedrooms": "Quartos",
+    "bathrooms": "Banheiros",
+    "cleaningType": "Tipo de limpeza",
+    "cleaningTypeOptions": {
+      "regular": "Limpeza regular",
+      "deep": "Limpeza deep cleaning"
     },
-    "message": "Conte sobre o seu espaço",
-    "messagePlaceholder": "ex.: casa de 3 quartos / 2 banheiros em Kissimmee, buscando limpeza quinzenal",
-    "submit": "Quero Meu Orçamento Grátis",
-    "note": "Nunca compartilhamos suas informações com ninguém."
+    "kids": "Crianças em casa?",
+    "pets": "Pets em casa?",
+    "yes": "Sim",
+    "no": "Não",
+    "frequency": "Com que frequência?",
+    "frequencyOptions": {
+      "weekly": "Semanal",
+      "twice": "Duas vezes por mês",
+      "once": "Uma vez por mês",
+      "other": "Outra frequência"
+    },
+    "message": "Mais alguma coisa? (opcional)",
+    "messagePlaceholder": "Estacionamento, acesso, pedidos especiais, mudança…",
+    "select": "Selecione…",
+    "submit": "Quero Minha Estimativa Grátis",
+    "sending": "Enviando…",
+    "successTitle": "Obrigada! 🎉",
+    "successBody": "Recebemos seu pedido e responderemos com sua estimativa grátis em breve — geralmente em até uma hora durante o horário comercial.",
+    "errorTitle": "Ops, algo deu errado",
+    "errorBody": "Por favor, mande um SMS ou e-mail direto para nós e enviamos sua estimativa na hora.",
+    "note": "Sem spam, nunca. Usamos seus dados apenas para enviar sua estimativa.",
+    "orReach": "Prefere falar direto? Fale com a gente:"
   },
   "finalCta": {
     "title": "Pronto para um espaço impecável?",
-    "subtitle": "Receba seu orçamento grátis em minutos — sem visita e sem compromisso.",
-    "button": "Fale conosco no WhatsApp"
+    "subtitle": "Receba sua estimativa grátis em minutos — sem visita e sem compromisso.",
+    "button": "Peça Sua Estimativa Grátis"
   },
   "footer": {
     "tagline": "Limpeza profissional de casas, escritórios, lojas e aluguéis de temporada em Orlando, FL.",
@@ -179,12 +203,14 @@
     "areaTitle": "Área de Atendimento",
     "areas": ["Orlando", "Kissimmee", "Lake Nona", "Winter Garden", "Dr. Phillips", "Celebration", "Davenport"],
     "contactTitle": "Contato",
+    "callLabel": "Ligar",
+    "textLabel": "SMS",
     "hoursLabel": "Horário",
     "hours": "Seg–Sáb · 8h–18h",
     "rights": "Todos os direitos reservados."
   },
   "float": {
-    "label": "Converse com a Rox Cleaning no WhatsApp"
+    "label": "Peça uma estimativa grátis"
   },
   "servicePages": {
     "backHome": "Voltar para o início",
@@ -222,7 +248,7 @@
         },
         {
           "q": "Preciso estar em casa durante a limpeza?",
-          "a": "Não precisa. Muitos clientes deixam uma senha ou chave. Nossa equipe tem antecedentes verificados e seguro, e ao terminar trancamos tudo e confirmamos por mensagem."
+          "a": "Não precisa. Muitos clientes deixam uma senha ou chave. Nossa equipe tem antecedentes verificados e seguro, e ao terminar trancamos tudo e confirmamos por SMS."
         },
         {
           "q": "Vocês levam os próprios produtos?",
@@ -230,7 +256,7 @@
         }
       ],
       "ctaTitle": "Sua casa impecável está a uma mensagem de distância",
-      "ctaButton": "Quero Meu Orçamento de Limpeza Residencial"
+      "ctaButton": "Quero Minha Estimativa de Limpeza Residencial"
     },
     "office": {
       "kicker": "Limpeza de Escritórios · Orlando, FL",
@@ -271,7 +297,7 @@
         }
       ],
       "ctaTitle": "Dê à sua equipe um lugar mais limpo para trabalhar",
-      "ctaButton": "Quero Meu Orçamento de Limpeza de Escritório"
+      "ctaButton": "Quero Minha Estimativa de Limpeza de Escritório"
     },
     "store": {
       "kicker": "Limpeza de Lojas · Orlando, FL",
@@ -312,7 +338,7 @@
         }
       ],
       "ctaTitle": "Deixe sua loja brilhando antes do próximo cliente entrar",
-      "ctaButton": "Quero Meu Orçamento de Limpeza de Loja"
+      "ctaButton": "Quero Minha Estimativa de Limpeza de Loja"
     },
     "str": {
       "kicker": "Aluguéis de Temporada · Orlando e Kissimmee",
@@ -353,7 +379,7 @@
         }
       ],
       "ctaTitle": "Nunca mais se estresse com um turnover",
-      "ctaButton": "Quero Meu Orçamento de Turnover no WhatsApp"
+      "ctaButton": "Quero Minha Estimativa de Turnover"
     }
   }
 }

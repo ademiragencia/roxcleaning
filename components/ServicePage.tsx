@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/lib/language";
-import { waLink, type ServiceKey } from "@/lib/site";
+import { smsLink, PHONE_DISPLAY, type ServiceKey } from "@/lib/site";
 import { FaqAccordion } from "@/components/Faq";
-import { CheckIcon, WhatsAppIcon } from "@/components/icons";
+import { CheckIcon, SparklesIcon } from "@/components/icons";
 
 export function ServicePage({ service }: { service: ServiceKey }) {
   const { t } = useLanguage();
@@ -32,15 +32,13 @@ export function ServicePage({ service }: { service: ServiceKey }) {
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-graphite/75">{page.subtitle}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={waLink(t.waMessage)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/#estimate"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-magenta px-7 py-3.5 font-semibold text-white shadow-lg shadow-magenta/30 transition-colors hover:bg-magenta-dark"
               >
-                <WhatsAppIcon className="h-5 w-5" />
+                <SparklesIcon className="h-5 w-5" />
                 {t.hero.ctaPrimary}
-              </a>
+              </Link>
               <Link
                 href="/"
                 className="inline-flex items-center justify-center rounded-full border-2 border-teal px-7 py-3.5 font-semibold text-teal transition-colors hover:bg-teal hover:text-white"
@@ -48,6 +46,15 @@ export function ServicePage({ service }: { service: ServiceKey }) {
                 {shared.backHome}
               </Link>
             </div>
+            <p className="mt-4 text-sm text-graphite/70">
+              {t.hero.orText}{" "}
+              <a
+                href={smsLink(t.smsMessage)}
+                className="font-semibold text-magenta underline decoration-magenta/40 underline-offset-4 hover:decoration-magenta"
+              >
+                {PHONE_DISPLAY}
+              </a>
+            </p>
           </div>
         </div>
       </section>
@@ -104,15 +111,13 @@ export function ServicePage({ service }: { service: ServiceKey }) {
       <section className="bg-gradient-to-r from-magenta to-magenta-dark text-white">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{page.ctaTitle}</h2>
-          <a
-            href={waLink(t.waMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/#estimate"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-semibold text-magenta shadow-lg transition-transform hover:scale-105"
           >
-            <WhatsAppIcon className="h-5 w-5 text-whatsapp" />
+            <SparklesIcon className="h-5 w-5 text-magenta" />
             {page.ctaButton}
-          </a>
+          </Link>
         </div>
       </section>
     </>

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useLanguage, type Lang } from "@/lib/language";
-import { waLink, PHONE_E164, SERVICE_ROUTES } from "@/lib/site";
-import { PhoneIcon } from "@/components/icons";
+import { smsLink, PHONE_E164, SERVICE_ROUTES } from "@/lib/site";
+import { PhoneIcon, MessageIcon } from "@/components/icons";
 
 const NAV_ANCHORS = [
   { key: "services", href: "/#services" },
@@ -76,7 +76,14 @@ export function Header() {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageToggle />
-          {/* Click-to-call, shown on mobile only */}
+          {/* Click-to-text and click-to-call, shown on mobile only */}
+          <a
+            href={smsLink(t.smsMessage)}
+            aria-label={t.nav.text}
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-blush-soft text-magenta transition-colors hover:bg-blush md:hidden"
+          >
+            <MessageIcon className="h-4 w-4" />
+          </a>
           <a
             href={`tel:${PHONE_E164}`}
             aria-label={t.nav.call}
@@ -84,14 +91,12 @@ export function Header() {
           >
             <PhoneIcon className="h-4 w-4" />
           </a>
-          <a
-            href={waLink(t.waMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/#estimate"
             className="hidden rounded-full bg-magenta px-4 py-2 text-sm font-semibold text-white shadow-md shadow-magenta/25 transition-colors hover:bg-magenta-dark sm:inline-block"
           >
             {t.nav.quote}
-          </a>
+          </Link>
           <button
             type="button"
             onClick={() => setOpen(!open)}
@@ -136,14 +141,13 @@ export function Header() {
               </Link>
             </li>
           </ul>
-          <a
-            href={waLink(t.waMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/#estimate"
+            onClick={() => setOpen(false)}
             className="mt-3 block rounded-full bg-magenta px-4 py-3 text-center font-semibold text-white shadow-md shadow-magenta/25"
           >
             {t.nav.quote}
-          </a>
+          </Link>
         </nav>
       )}
     </header>

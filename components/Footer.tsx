@@ -7,11 +7,20 @@ import {
   SERVICE_KEYS,
   PHONE_DISPLAY,
   PHONE_E164,
+  EMAIL,
   INSTAGRAM_HANDLE,
   INSTAGRAM_URL,
-  waLink,
+  smsLink,
+  emailLink,
 } from "@/lib/site";
-import { PhoneIcon, InstagramIcon, ClockIcon, MapPinIcon, WhatsAppIcon } from "@/components/icons";
+import {
+  PhoneIcon,
+  MessageIcon,
+  MailIcon,
+  InstagramIcon,
+  ClockIcon,
+  MapPinIcon,
+} from "@/components/icons";
 
 export function Footer() {
   const { t } = useLanguage();
@@ -77,18 +86,28 @@ export function Footer() {
                 className="flex items-center gap-2 transition-colors hover:text-magenta"
               >
                 <PhoneIcon className="h-4 w-4 shrink-0 text-magenta" />
-                {PHONE_DISPLAY}
+                <span>
+                  <span className="sr-only">{t.footer.callLabel}: </span>
+                  {PHONE_DISPLAY}
+                </span>
               </a>
             </li>
             <li>
               <a
-                href={waLink(t.waMessage)}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={smsLink(t.smsMessage)}
                 className="flex items-center gap-2 transition-colors hover:text-magenta"
               >
-                <WhatsAppIcon className="h-4 w-4 shrink-0 text-whatsapp" />
-                WhatsApp
+                <MessageIcon className="h-4 w-4 shrink-0 text-magenta" />
+                {t.footer.textLabel} · {PHONE_DISPLAY}
+              </a>
+            </li>
+            <li>
+              <a
+                href={emailLink(t.emailSubject)}
+                className="flex items-center gap-2 break-all transition-colors hover:text-magenta"
+              >
+                <MailIcon className="h-4 w-4 shrink-0 text-magenta" />
+                {EMAIL}
               </a>
             </li>
             <li>

@@ -4,8 +4,8 @@ import "./globals.css";
 import { LanguageProvider } from "@/lib/language";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { SITE_NAME, SITE_URL, PHONE_E164, INSTAGRAM_URL } from "@/lib/site";
+import { FloatingContact } from "@/components/FloatingContact";
+import { SITE_NAME, SITE_URL, PHONE_E164, EMAIL, INSTAGRAM_URL } from "@/lib/site";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Rox Cleaning",
   },
   description:
-    "Professional house cleaning in Orlando, FL. Rox Cleaning offers home, office, store and Airbnb/vacation rental cleaning in Orlando, Kissimmee and Central Florida. Licensed & insured — get a free quote on WhatsApp.",
+    "Professional house cleaning in Orlando, FL. Rox Cleaning offers home, office, store and Airbnb/vacation rental cleaning in Orlando, Kissimmee and Central Florida. Licensed & insured — get a free estimate by text or email.",
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
@@ -51,8 +51,17 @@ const localBusinessJsonLd = {
   image: `${SITE_URL}/og.png`,
   logo: `${SITE_URL}/rox_horizontal.svg`,
   telephone: PHONE_E164,
+  email: EMAIL,
   priceRange: "$$",
   sameAs: [INSTAGRAM_URL],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: PHONE_E164,
+    email: EMAIL,
+    contactType: "customer service",
+    areaServed: "US",
+    availableLanguage: ["English", "Portuguese"],
+  },
   areaServed: [
     { "@type": "City", name: "Orlando", "@id": "https://en.wikipedia.org/wiki/Orlando,_Florida" },
     { "@type": "City", name: "Kissimmee", "@id": "https://en.wikipedia.org/wiki/Kissimmee,_Florida" },
@@ -96,7 +105,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
-          <WhatsAppFloat />
+          <FloatingContact />
         </LanguageProvider>
       </body>
     </html>

@@ -3,16 +3,25 @@ export const SITE_NAME = "Rox Cleaning";
 
 export const PHONE_DISPLAY = "+1 (407) 881-9431";
 export const PHONE_E164 = "+14078819431";
-export const WA_NUMBER = "14078819431";
+
+export const EMAIL = "roxcleaningusa@gmail.com";
 
 export const INSTAGRAM_HANDLE = "@roxcleaning";
 export const INSTAGRAM_URL = "https://www.instagram.com/roxcleaning";
 
-// TODO: replace YOUR_FORM_ID with the real Formspree form ID
-export const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+// Web3Forms — free static-form backend. This access key routes submissions
+// to the business inbox. Replace only if the Rox account changes.
+export const WEB3FORMS_ACCESS_KEY = "874a57fa-de87-4f1a-9ad7-93cf884ea249";
+export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
-export function waLink(message: string): string {
-  return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+// Click-to-text (SMS) — the preferred quick channel for US clients.
+export function smsLink(message: string): string {
+  return `sms:${PHONE_E164}?&body=${encodeURIComponent(message)}`;
+}
+
+// Click-to-email with a pre-filled subject.
+export function emailLink(subject: string): string {
+  return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}`;
 }
 
 export const SERVICE_ROUTES = {
