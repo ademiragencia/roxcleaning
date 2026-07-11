@@ -30,14 +30,14 @@ export async function createJob(formData: FormData) {
   if (error || !data) return;
   revalidatePath("/schedule");
   revalidatePath("/");
-  redirect("/schedule");
+  redirect("/crm/schedule");
 }
 
 export async function updateJob(id: string, formData: FormData) {
   const supabase = await createClient();
   await supabase.from("jobs").update(parse(formData)).eq("id", id);
   revalidatePath("/schedule");
-  redirect("/schedule");
+  redirect("/crm/schedule");
 }
 
 export async function updateJobStatus(id: string, status: JobStatus) {
@@ -53,5 +53,5 @@ export async function deleteJob(id: string) {
   const supabase = await createClient();
   await supabase.from("jobs").delete().eq("id", id);
   revalidatePath("/schedule");
-  redirect("/schedule");
+  redirect("/crm/schedule");
 }

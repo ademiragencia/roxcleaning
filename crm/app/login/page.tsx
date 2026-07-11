@@ -58,7 +58,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="mb-8 flex flex-col items-center text-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/rox_horizontal.png" alt="Rox Cleaning" width={150} height={50} className="h-12 w-auto" />
+          <img src="/crm/rox_horizontal.png" alt="Rox Cleaning" width={150} height={50} className="h-12 w-auto" />
           <p className="mt-3 text-sm font-medium text-graphite/60">CRM · Internal access</p>
         </div>
 

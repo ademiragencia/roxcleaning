@@ -45,7 +45,7 @@ export default async function DocumentDetailPage({ params }: { params: Promise<{
         <div className="flex items-start justify-between">
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/rox_horizontal.png" alt="Rox Cleaning" width={150} height={50} className="h-11 w-auto" />
+            <img src="/crm/rox_horizontal.png" alt="Rox Cleaning" width={150} height={50} className="h-11 w-auto" />
             <p className="mt-2 text-sm text-graphite/60">Orlando &amp; Kissimmee, FL · roxcleaningusa@gmail.com</p>
           </div>
           <div className="text-right">

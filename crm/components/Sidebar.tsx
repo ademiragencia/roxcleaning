@@ -91,7 +91,7 @@ export function Sidebar({ role, name }: { role: Role; name: string }) {
       {/* Mobile top bar */}
       <div className="flex items-center justify-between border-b border-black/5 bg-white px-4 py-3 md:hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/rox_horizontal.png" alt="Rox Cleaning" width={110} height={37} className="h-8 w-auto" />
+        <img src="/crm/rox_horizontal.png" alt="Rox Cleaning" width={110} height={37} className="h-8 w-auto" />
         <button
           onClick={() => setOpen(!open)}
           aria-label="Menu"
@@ -108,7 +108,7 @@ export function Sidebar({ role, name }: { role: Role; name: string }) {
       >
         <div className="hidden items-center gap-2 px-5 py-5 md:flex">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/rox_horizontal.png" alt="Rox Cleaning" width={130} height={44} className="h-9 w-auto" />
+          <img src="/crm/rox_horizontal.png" alt="Rox Cleaning" width={130} height={44} className="h-9 w-auto" />
         </div>
 
         <nav className="flex flex-col gap-1 px-3 pb-4 md:pb-0">
@@ -141,7 +141,7 @@ export function Sidebar({ role, name }: { role: Role; name: string }) {
               <p className="truncate text-sm font-semibold text-graphite">{name || "User"}</p>
               <p className="text-xs capitalize text-graphite/50">{role}</p>
             </div>
-            <form action="/auth/signout" method="post">
+            <form action="/crm/auth/signout" method="post">
               <button
                 type="submit"
                 aria-label="Sign out"

@@ -35,7 +35,7 @@ export async function createClientRecord(formData: FormData) {
 
   if (error || !data) return;
   revalidatePath("/clients");
-  redirect(`/clients/${data.id}`);
+  redirect(`/crm/clients/${data.id}`);
 }
 
 export async function updateClientRecord(id: string, formData: FormData) {
@@ -44,12 +44,12 @@ export async function updateClientRecord(id: string, formData: FormData) {
   await supabase.from("clients").update({ ...values, updated_at: new Date().toISOString() }).eq("id", id);
   revalidatePath(`/clients/${id}`);
   revalidatePath("/clients");
-  redirect(`/clients/${id}`);
+  redirect(`/crm/clients/${id}`);
 }
 
 export async function deleteClientRecord(id: string) {
   const supabase = await createClient();
   await supabase.from("clients").delete().eq("id", id);
   revalidatePath("/clients");
-  redirect("/clients");
+  redirect("/crm/clients");
 }

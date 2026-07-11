@@ -59,7 +59,7 @@ export async function createDocument(formData: FormData) {
   }
 
   revalidatePath("/invoices");
-  redirect(`/invoices/${doc.id}`);
+  redirect(`/crm/invoices/${doc.id}`);
 }
 
 export async function updateDocumentStatus(id: string, status: DocStatus) {
@@ -75,5 +75,5 @@ export async function deleteDocument(id: string) {
   const supabase = await createClient();
   await supabase.from("documents").delete().eq("id", id);
   revalidatePath("/invoices");
-  redirect("/invoices");
+  redirect("/crm/invoices");
 }
