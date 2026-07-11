@@ -14,10 +14,13 @@ export const INSTAGRAM_URL = "https://www.instagram.com/roxcleaning";
 export const WEB3FORMS_ACCESS_KEY = "874a57fa-de87-4f1a-9ad7-93cf884ea249";
 export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
-// Supabase (Rox CRM). Set these in the website's Vercel env for estimate-form
-// submissions to also drop into the CRM Leads inbox. Left blank = feature off.
-export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-export const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+// Supabase (Rox CRM). The anon key is public and protected by Row Level
+// Security (anonymous visitors may only INSERT leads), so it's safe to ship.
+export const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://vxelnnoubozqmhqperrs.supabase.co";
+export const SUPABASE_ANON_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4ZWxubm91Ym96cW1ocXBlcnJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3OTU5OTQsImV4cCI6MjA5OTM3MTk5NH0.cLYobvf3nxQKe9ixNft59VJXQ3Ij-LIw6rLbl2K_IBY";
 
 // Best-effort insert of an estimate submission into the CRM `leads` table.
 // Anonymous inserts are permitted by a strict insert-only RLS policy.
