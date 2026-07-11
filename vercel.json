@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/crm",
+      "destination": "https://roxcleaning-crm-ademirrodriguesof-2533s-projects.vercel.app/crm"
+    },
+    {
+      "source": "/crm/:path*",
+      "destination": "https://roxcleaning-crm-ademirrodriguesof-2533s-projects.vercel.app/crm/:path*"
+    },
+    {
       "source": "/google248b6823b9729f19.html",
       "destination": "/google248b6823b9729f19.txt"
     }
