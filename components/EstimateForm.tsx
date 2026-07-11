@@ -10,6 +10,7 @@ import {
   EMAIL,
   smsLink,
   emailLink,
+  saveLeadToCrm,
 } from "@/lib/site";
 import { PhoneIcon, MessageIcon, MailIcon } from "@/components/icons";
 
@@ -28,7 +29,12 @@ export function EstimateForm() {
     event.preventDefault();
     setStatus("sending");
     const formData = new FormData(event.currentTarget);
-    const payload = JSON.stringify(Object.fromEntries(formData.entries()));
+    const entries = Object.fromEntries(formData.entries()) as Record<string, string>;
+    const payload = JSON.stringify(entries);
+
+    // Drop the lead into the CRM (best-effort; won't block the email path).
+    void saveLeadToCrm(entries);
+
     try {
       const res = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
