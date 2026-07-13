@@ -44,7 +44,9 @@ export async function createDocument(formData: FormData) {
     .insert({ kind, client_id, issue_date, due_date, notes, subtotal, tax: taxAmount, total, number, status: "draft" })
     .select("id")
     .single();
-  if (error || !doc) return;
+  if (error || !doc) {
+    redirect(`/crm/invoices/new?error=${encodeURIComponent(error?.message ?? "Could not save.")}`);
+  }
 
   if (items.length) {
     await supabase.from("document_items").insert(

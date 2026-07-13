@@ -9,6 +9,7 @@ export function JobForm({
   job,
   defaultClientId,
   cancelHref,
+  error,
 }: {
   action: (formData: FormData) => void;
   clients: Pick<Client, "id" | "name">[];
@@ -16,6 +17,7 @@ export function JobForm({
   job?: Job;
   defaultClientId?: string;
   cancelHref: string;
+  error?: string;
 }) {
   // ISO → value for <input type="datetime-local">
   let scheduledLocal = "";
@@ -28,6 +30,9 @@ export function JobForm({
 
   return (
     <form action={action} className="space-y-4">
+      {error && (
+        <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700">{error}</p>
+      )}
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className={labelClass}>Client</label>

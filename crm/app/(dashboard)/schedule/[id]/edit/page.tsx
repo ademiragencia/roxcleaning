@@ -6,9 +6,16 @@ import { JobForm } from "@/components/JobForm";
 import { updateJob, deleteJob } from "@/app/(dashboard)/schedule/actions";
 import type { Client, Profile, Job } from "@/lib/types";
 
-export default async function EditJobPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function EditJobPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ error?: string }>;
+}) {
   await requireAdmin();
   const { id } = await params;
+  const { error } = await searchParams;
   const supabase = await createClient();
   const [{ data: job }, { data: clients }, { data: staff }] = await Promise.all([
     supabase.from("jobs").select("*").eq("id", id).single(),
@@ -30,6 +37,7 @@ export default async function EditJobPage({ params }: { params: Promise<{ id: st
           clients={(clients ?? []) as Pick<Client, "id" | "name">[]}
           staff={(staff ?? []) as Pick<Profile, "id" | "full_name">[]}
           cancelHref="/schedule"
+          error={error}
         />
         <form action={del} className="mt-4 border-t border-black/5 pt-4">
           <Button variant="danger" type="submit">

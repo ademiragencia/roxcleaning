@@ -18,10 +18,12 @@ export function DocumentForm({
   clients,
   defaultClientId,
   defaultKind = "invoice",
+  error,
 }: {
   clients: Pick<Client, "id" | "name">[];
   defaultClientId?: string;
   defaultKind?: "quote" | "invoice";
+  error?: string;
 }) {
   const [rows, setRows] = useState<Row[]>([{ description: "", qty: 1, unit_price: 0 }]);
   const [tax, setTax] = useState(0);
@@ -35,6 +37,9 @@ export function DocumentForm({
 
   return (
     <form action={createDocument} className="space-y-5">
+      {error && (
+        <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700">{error}</p>
+      )}
       <input type="hidden" name="items" value={JSON.stringify(rows)} />
       <input type="hidden" name="tax" value={tax} />
 

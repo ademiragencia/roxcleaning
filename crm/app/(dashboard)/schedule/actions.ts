@@ -24,10 +24,13 @@ function parse(formData: FormData) {
   };
 }
 
+const err = (path: string, message: string) =>
+  redirect(`${path}?error=${encodeURIComponent(message)}`);
+
 export async function createJob(formData: FormData) {
   const supabase = await createClient();
   const { data, error } = await supabase.from("jobs").insert(parse(formData)).select("id").single();
-  if (error || !data) return;
+  if (error || !data) return err("/crm/schedule/new", error?.message ?? "Could not save the cleaning.");
   revalidatePath("/schedule");
   revalidatePath("/");
   redirect("/crm/schedule");
@@ -35,7 +38,8 @@ export async function createJob(formData: FormData) {
 
 export async function updateJob(id: string, formData: FormData) {
   const supabase = await createClient();
-  await supabase.from("jobs").update(parse(formData)).eq("id", id);
+  const { error } = await supabase.from("jobs").update(parse(formData)).eq("id", id);
+  if (error) return err(`/crm/schedule/${id}/edit`, error.message);
   revalidatePath("/schedule");
   redirect("/crm/schedule");
 }

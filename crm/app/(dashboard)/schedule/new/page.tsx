@@ -8,10 +8,10 @@ import type { Client, Profile } from "@/lib/types";
 export default async function NewJobPage({
   searchParams,
 }: {
-  searchParams: Promise<{ client?: string }>;
+  searchParams: Promise<{ client?: string; error?: string }>;
 }) {
   await requireAdmin();
-  const { client } = await searchParams;
+  const { client, error } = await searchParams;
   const supabase = await createClient();
   const [{ data: clients }, { data: staff }] = await Promise.all([
     supabase.from("clients").select("id,name").order("name"),
@@ -28,6 +28,7 @@ export default async function NewJobPage({
           staff={(staff ?? []) as Pick<Profile, "id" | "full_name">[]}
           defaultClientId={client}
           cancelHref="/schedule"
+          error={error}
         />
       </Card>
     </>

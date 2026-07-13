@@ -6,13 +6,18 @@ export function ClientForm({
   action,
   client,
   cancelHref,
+  error,
 }: {
   action: (formData: FormData) => void;
   client?: Client;
   cancelHref: string;
+  error?: string;
 }) {
   return (
     <form action={action} className="space-y-4">
+      {error && (
+        <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700">{error}</p>
+      )}
       <div>
         <label className={labelClass}>Name *</label>
         <input name="name" required defaultValue={client?.name ?? ""} className={inputClass} placeholder="Jane Smith" />

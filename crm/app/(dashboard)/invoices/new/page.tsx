@@ -7,10 +7,10 @@ import type { Client } from "@/lib/types";
 export default async function NewInvoicePage({
   searchParams,
 }: {
-  searchParams: Promise<{ client?: string; kind?: string }>;
+  searchParams: Promise<{ client?: string; kind?: string; error?: string }>;
 }) {
   await requireAdmin();
-  const { client, kind } = await searchParams;
+  const { client, kind, error } = await searchParams;
   const supabase = await createClient();
   const { data: clients } = await supabase.from("clients").select("id,name").order("name");
 
@@ -22,6 +22,7 @@ export default async function NewInvoicePage({
           clients={(clients ?? []) as Pick<Client, "id" | "name">[]}
           defaultClientId={client}
           defaultKind={kind === "quote" ? "quote" : "invoice"}
+          error={error}
         />
       </Card>
     </>
