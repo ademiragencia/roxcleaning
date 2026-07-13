@@ -13,6 +13,7 @@ const NAV = [
   { href: "/calendar", label: "Calendar", icon: "grid" },
   { href: "/invoices", label: "Quotes & Invoices", icon: "receipt" },
   { href: "/reports", label: "Reports", icon: "chart", adminOnly: true },
+  { href: "/applicants", label: "Applicants", icon: "userplus", adminOnly: true },
   { href: "/team", label: "Team", icon: "shield", adminOnly: true },
   { href: "/account", label: "My account", icon: "cog" },
 ] as const;
@@ -72,6 +73,14 @@ function Icon({ name }: { name: string }) {
       return (
         <svg {...common}>
           <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+        </svg>
+      );
+    case "userplus":
+      return (
+        <svg {...common}>
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M19 8v6M22 11h-6" />
         </svg>
       );
     case "chart":

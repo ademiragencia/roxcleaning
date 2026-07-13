@@ -84,6 +84,31 @@ export interface CrmDocument {
   created_at: string;
 }
 
+export type ApplicantStatus = "new" | "screening" | "interview" | "hired" | "rejected";
+
+export interface Applicant {
+  id: string;
+  created_at: string;
+  full_name: string;
+  email: string | null;
+  phone: string | null;
+  location: string | null;
+  legal_to_work: string | null;
+  has_transport: string | null;
+  english_self: string | null;
+  has_experience: string | null;
+  years_experience: string | null;
+  experience_details: string | null;
+  availability: string | null;
+  start_date: string | null;
+  hours_note: string | null;
+  test_answers: Record<string, number> | null;
+  writing_sample: string | null;
+  why_join: string | null;
+  status: ApplicantStatus;
+  source: string | null;
+}
+
 export interface DocumentItem {
   id: string;
   document_id: string;

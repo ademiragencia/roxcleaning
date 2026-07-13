@@ -211,3 +211,44 @@ create policy documents_admin on public.documents
 drop policy if exists document_items_admin on public.document_items;
 create policy document_items_admin on public.document_items
   for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+-- ============================================================================
+-- APPLICANTS  (job applications from the standalone careers.html form)
+-- The public careers page may INSERT only. Admins see/manage everything.
+-- ============================================================================
+create table if not exists public.applicants (
+  id                 uuid primary key default gen_random_uuid(),
+  created_at         timestamptz not null default now(),
+  full_name          text not null,
+  email              text,
+  phone              text,
+  location           text,
+  legal_to_work      text,
+  has_transport      text,
+  english_self       text,
+  has_experience     text,
+  years_experience   text,
+  experience_details text,
+  availability       text,
+  start_date         date,
+  hours_note         text,
+  test_answers       jsonb not null default '{}'::jsonb,
+  writing_sample     text,
+  why_join           text,
+  status             text not null default 'new'
+                     check (status in ('new','screening','interview','hired','rejected')),
+  source             text
+);
+
+create index if not exists idx_applicants_created on public.applicants (created_at desc);
+create index if not exists idx_applicants_status on public.applicants (status);
+
+alter table public.applicants enable row level security;
+
+drop policy if exists applicants_admin on public.applicants;
+create policy applicants_admin on public.applicants
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+drop policy if exists applicants_public_insert on public.applicants;
+create policy applicants_public_insert on public.applicants
+  for insert to anon with check (true);

@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Careers — Rox Cleaning</title>
+<meta name="description" content="Join Rox Cleaning in Orlando, FL. We're hiring a friendly, English-speaking customer service attendant. Apply online." />
+<link rel="icon" href="/rox_icone_lotus.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --magenta:#e91e8c; --magenta-dark:#c4116f; --teal:#0f7173; --teal-dark:#0a5657;
+    --graphite:#1b2530; --blush:#ffd6ec; --blush-soft:#fff0f8; --mist:#f4f5f7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Poppins,system-ui,Arial,sans-serif;color:var(--graphite);background:var(--mist);-webkit-font-smoothing:antialiased;line-height:1.5}
+  a{color:inherit}
+  .wrap{max-width:640px;margin:0 auto;padding:24px 16px 64px}
+  .hero{background:linear-gradient(180deg,var(--blush-soft),transparent);border-radius:20px;padding:28px 24px;margin-bottom:20px;position:relative;overflow:hidden}
+  .hero img.lotus{position:absolute;right:-30px;top:-20px;width:180px;opacity:.12;pointer-events:none}
+  .pill{display:inline-block;background:#fff;color:var(--teal);font-size:12px;font-weight:600;padding:6px 14px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  h1{font-size:30px;line-height:1.15;margin-top:14px;letter-spacing:-.02em}
+  h1 span{color:var(--magenta)}
+  .lead{margin-top:14px;color:#4b5563;font-size:15px}
+  .grid2{display:grid;gap:18px;grid-template-columns:1fr;margin-top:16px}
+  @media(min-width:560px){.grid2{grid-template-columns:1fr 1fr}}
+  .sub h3{font-size:15px;margin-bottom:6px}
+  .sub li{list-style:none;font-size:13px;color:#4b5563;margin:4px 0}
+  .card{background:#fff;border:1px solid var(--blush);border-radius:20px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+  .prog{margin-bottom:22px}
+  .prog .row{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#8a94a6;margin-bottom:8px}
+  .bar{height:8px;background:var(--blush);border-radius:999px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:var(--magenta);border-radius:999px;transition:width .3s}
+  .step{display:none}
+  .step.active{display:block;animation:fade .25s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  h2{font-size:20px;margin-bottom:16px}
+  label.f{display:block;margin-top:14px}
+  label.f > span{display:block;font-size:14px;font-weight:500;margin-bottom:6px}
+  .hint{font-size:12px;color:#9aa3b2;margin-top:4px}
+  input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{
+    width:100%;border:1px solid var(--blush);border-radius:12px;padding:12px 14px;font:inherit;font-size:14px;color:var(--graphite);background:#fff;outline:none;transition:border .15s,box-shadow .15s}
+  input:focus,select:focus,textarea:focus{border-color:var(--magenta);box-shadow:0 0 0 3px rgba(233,30,140,.18)}
+  textarea{resize:vertical}
+  .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+  .opts.col{flex-direction:column}
+  .opts.two{display:grid;grid-template-columns:1fr 1fr}
+  .opt{position:relative}
+  .opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+  .opt span{display:block;border:1px solid var(--blush);background:#fff;border-radius:12px;padding:10px 16px;font-size:14px;font-weight:500;cursor:pointer;transition:.15s;text-align:left}
+  .opt input:checked + span{border-color:var(--magenta);background:var(--magenta);color:#fff}
+  .opt input:focus-visible + span{box-shadow:0 0 0 3px rgba(233,30,140,.25)}
+  .qbox{border:1px solid var(--blush);background:var(--blush-soft);border-radius:16px;padding:16px;margin-top:6px}
+  .q{margin-top:14px}
+  .q:first-child{margin-top:0}
+  .q p{font-size:14px;font-weight:500;margin-bottom:8px}
+  .q .opt span{background:#fff}
+  .q .opt input:checked + span{background:rgba(233,30,140,.12);border-color:var(--magenta);color:var(--graphite)}
+  .nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+  .btn{border:none;border-radius:999px;padding:11px 26px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:.15s}
+  .btn.primary{background:var(--magenta);color:#fff;box-shadow:0 4px 10px rgba(233,30,140,.25)}
+  .btn.primary:hover{background:var(--magenta-dark)}
+  .btn.primary:disabled{opacity:.6;cursor:not-allowed}
+  .btn.ghost{background:#fff;border:2px solid var(--teal);color:var(--teal)}
+  .btn.ghost:hover{background:var(--teal);color:#fff}
+  .btn.ghost.hide{visibility:hidden}
+  .err{background:#fff1f2;background:#fff1f2;color:#be123c;border-radius:12px;padding:10px 14px;font-size:13px;font-weight:500;margin-top:16px;display:none}
+  .review{background:var(--blush-soft);border:1px solid var(--blush);border-radius:16px;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+  .review dt{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#9aa3b2;font-weight:600}
+  .review dd{font-size:14px;text-transform:capitalize}
+  .success{text-align:center;padding:28px 16px}
+  .success h2{font-size:24px;color:var(--magenta)}
+  .success p{margin-top:12px;color:#4b5563;max-width:420px;margin-left:auto;margin-right:auto}
+  .foot{text-align:center;font-size:12px;color:#9aa3b2;margin-top:22px}
+  .conditional{display:none}
+  .conditional.show{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img class="lotus" src="/rox_icone_lotus.svg" alt="" />
+    <span class="pill">We're hiring · Orlando, FL</span>
+    <h1>Customer Service Attendant <span>(English-speaking)</span></h1>
+    <p class="lead">Rox Cleaning is looking for a warm, professional, <strong>fluent-English</strong> customer service attendant to answer calls and messages, help clients book and reschedule cleanings, and keep our customers happy.</p>
+    <div class="grid2">
+      <div class="sub">
+        <h3>What you'll do</h3>
+        <ul>
+          <li>• Answer calls, texts &amp; emails in clear English</li>
+          <li>• Book, confirm and reschedule cleanings</li>
+          <li>• Give friendly quotes and follow up with leads</li>
+        </ul>
+      </div>
+      <div class="sub">
+        <h3>What we're looking for</h3>
+        <ul>
+          <li>• Fluent, professional English</li>
+          <li>• Warm, patient and organized</li>
+          <li>• Customer service experience is a plus</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="app">
+      <!-- progress -->
+      <div class="prog">
+        <div class="row"><span id="stepLabel">Step 1 of 5</span><span id="pctLabel">20%</span></div>
+        <div class="bar"><i id="barFill" style="width:20%"></i></div>
+      </div>
+
+      <form id="form" novalidate>
+        <!-- STEP 1 -->
+        <div class="step active" data-step="0">
+          <h2>About you</h2>
+          <label class="f"><span>Full name *</span><input type="text" name="full_name" placeholder="Jane Smith" /></label>
+          <label class="f"><span>Email *</span><input type="email" name="email" placeholder="you@email.com" /></label>
+          <label class="f"><span>Phone *</span><input type="tel" name="phone" placeholder="(407) 555-0123" /></label>
+          <label class="f"><span>City / area you live in</span><input type="text" name="location" placeholder="Kissimmee, FL" /></label>
+          <label class="f"><span>Are you legally allowed to work in the US? *</span></label>
+          <div class="opts" data-req="legal_to_work">
+            <label class="opt"><input type="radio" name="legal_to_work" value="yes"><span>Yes</span></label>
+            <label class="opt"><input type="radio" name="legal_to_work" value="no"><span>No</span></label>
+          </div>
+          <label class="f"><span>Do you have reliable transportation?</span></label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="has_transport" value="yes"><span>Yes</span></label>
+            <label class="opt"><input type="radio" name="has_transport" value="no"><span>No</span></label>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step" data-step="1">
+          <h2>Experience</h2>
+          <label class="f"><span>Do you have experience in customer service or reception? *</span></label>
+          <div class="opts" data-req="has_experience">
+            <label class="opt"><input type="radio" name="has_experience" value="yes"><span>Yes</span></label>
+            <label class="opt"><input type="radio" name="has_experience" value="no"><span>No</span></label>
+          </div>
+          <div class="conditional" id="expBlock">
+            <label class="f"><span>How many years?</span>
+              <select name="years_experience">
+                <option value="">Select…</option>
+                <option value="<1">Less than 1 year</option>
+                <option value="1-2">1–2 years</option>
+                <option value="3-5">3–5 years</option>
+                <option value="5+">5+ years</option>
+              </select>
+            </label>
+            <label class="f"><span>Tell us about your most relevant role</span><textarea name="experience_details" rows="3" placeholder="Company, role, and what you did…"></textarea></label>
+          </div>
+          <label class="f"><span>Why do you want to work with Rox Cleaning?</span><textarea name="why_join" rows="3" placeholder="Tell us a bit about yourself and why this role…"></textarea></label>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step" data-step="2">
+          <h2>Availability</h2>
+          <label class="f"><span>What availability are you looking for? *</span></label>
+          <div class="opts two" data-req="availability">
+            <label class="opt"><input type="radio" name="availability" value="full_time"><span>Full-time</span></label>
+            <label class="opt"><input type="radio" name="availability" value="part_time"><span>Part-time</span></label>
+            <label class="opt"><input type="radio" name="availability" value="weekends"><span>Weekends only</span></label>
+            <label class="opt"><input type="radio" name="availability" value="other"><span>Other</span></label>
+          </div>
+          <label class="f"><span>Earliest start date</span><input type="date" name="start_date" /></label>
+          <label class="f"><span>Preferred hours (optional)</span><input type="text" name="hours_note" placeholder="e.g. Mon–Fri 9am–3pm" /></label>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="step" data-step="3">
+          <h2>English</h2>
+          <label class="f"><span>How would you rate your English? *</span></label>
+          <div class="opts two" data-req="english_self">
+            <label class="opt"><input type="radio" name="english_self" value="fluent"><span>Fluent / native</span></label>
+            <label class="opt"><input type="radio" name="english_self" value="advanced"><span>Advanced</span></label>
+            <label class="opt"><input type="radio" name="english_self" value="intermediate"><span>Intermediate</span></label>
+            <label class="opt"><input type="radio" name="english_self" value="basic"><span>Basic</span></label>
+          </div>
+
+          <label class="f"><span>Quick English check <span style="font-weight:400;color:#9aa3b2">(answer in English)</span></span></label>
+          <div class="qbox" id="testBox"><!-- questions injected by JS --></div>
+
+          <label class="f"><span>Write a short reply (in English) *</span></label>
+          <p class="hint">A customer is upset because the cleaner arrived 30 minutes late. Reply in 2–3 sentences.</p>
+          <textarea name="writing_sample" rows="4" style="margin-top:8px" placeholder="Your reply…"></textarea>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="step" data-step="4">
+          <h2>Review &amp; submit</h2>
+          <p class="hint" style="margin-bottom:14px">Please review your answers before submitting.</p>
+          <dl class="review" id="reviewBox"></dl>
+          <p class="hint" style="margin-top:12px">By submitting, you confirm the information is accurate.</p>
+        </div>
+
+        <div class="err" id="err"></div>
+
+        <div class="nav">
+          <button type="button" class="btn ghost hide" id="backBtn">Back</button>
+          <button type="button" class="btn primary" id="nextBtn">Continue</button>
+        </div>
+      </form>
+
+      <!-- success (hidden until submit) -->
+      <div class="success" id="success" style="display:none">
+        <h2>Thank you for applying! 🎉</h2>
+        <p>We've received your application. Our team will review it and reach out if you're a good fit. Good luck!</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">Rox Cleaning · Orlando &amp; Kissimmee, FL</p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---- config (public keys; protected by database rules) ----
+  var SUPABASE_URL = "https://vxelnnoubozqmhqperrs.supabase.co";
+  var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ4ZWxubm91Ym96cW1ocXBlcnJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3OTU5OTQsImV4cCI6MjA5OTM3MTk5NH0.cLYobvf3nxQKe9ixNft59VJXQ3Ij-LIw6rLbl2K_IBY";
+  var WEB3FORMS_KEY = "874a57fa-de87-4f1a-9ad7-93cf884ea249";
+
+  // English screening questions (answers are graded in the CRM, not here)
+  var TEST = [
+    {q:'A customer texts: "Can I move my cleaning to Friday morning?" What are they asking for?',
+     o:["To cancel the service","To reschedule to Friday morning","To pay an invoice","To add another room"]},
+    {q:"Choose the grammatically correct sentence:",
+     o:["She don't have no availability today.","She doesn't have any availability today.","She not have availability today.","She haven't availability today."]},
+    {q:'Fill in the blank: "Thank you for calling Rox Cleaning. How ___ I help you?"',
+     o:["can","am","does","to"]},
+    {q:'A client says: "I’m running behind schedule." This means the client is:',
+     o:["Early","On time","Late / delayed","Cancelling"]},
+    {q:"Which is the most polite reply to an upset customer?",
+     o:["That's not my problem.","You are wrong.","I'm so sorry for the inconvenience — let me fix that right away.","Call back later."]}
+  ];
+
+  var TOTAL = 5, step = 0;
+  var form = document.getElementById("form");
+  var errEl = document.getElementById("err");
+  var backBtn = document.getElementById("backBtn");
+  var nextBtn = document.getElementById("nextBtn");
+
+  // inject test questions
+  var testBox = document.getElementById("testBox");
+  testBox.innerHTML = TEST.map(function(t,i){
+    var opts = t.o.map(function(opt,oi){
+      return '<label class="opt"><input type="radio" name="q'+i+'" value="'+oi+'"><span>'+opt+'</span></label>';
+    }).join("");
+    return '<div class="q"><p>'+(i+1)+'. '+t.q+'</p><div class="opts col">'+opts+'</div></div>';
+  }).join("");
+
+  function val(name){ var el = form.elements[name]; if(!el) return ""; if(el.length&&el[0]&&el[0].type==="radio"){ for(var i=0;i<el.length;i++){ if(el[i].checked) return el[i].value; } return ""; } return (el.value||"").trim(); }
+
+  function showStep(){
+    var steps = document.querySelectorAll(".step");
+    steps.forEach(function(s){ s.classList.toggle("active", Number(s.dataset.step)===step); });
+    document.getElementById("stepLabel").textContent = "Step "+(step+1)+" of "+TOTAL;
+    var pct = Math.round(((step+1)/TOTAL)*100);
+    document.getElementById("pctLabel").textContent = pct+"%";
+    document.getElementById("barFill").style.width = pct+"%";
+    backBtn.classList.toggle("hide", step===0);
+    nextBtn.textContent = step===TOTAL-1 ? "Submit application" : "Continue";
+    errEl.style.display="none";
+    window.scrollTo({top:0,behavior:"smooth"});
+    if(step===TOTAL-1) buildReview();
+  }
+
+  function fail(msg){ errEl.textContent=msg; errEl.style.display="block"; window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"}); return false; }
+
+  function validate(){
+    if(step===0){
+      if(!val("full_name")) return fail("Please enter your full name.");
+      if(!val("email")) return fail("Please enter your email.");
+      if(!val("phone")) return fail("Please enter your phone number.");
+      if(!val("legal_to_work")) return fail("Please answer if you're legally allowed to work in the US.");
+    }
+    if(step===1){ if(!val("has_experience")) return fail("Please tell us about your experience."); }
+    if(step===2){ if(!val("availability")) return fail("Please select your availability."); }
+    if(step===3){
+      if(!val("english_self")) return fail("Please rate your English.");
+      for(var i=0;i<TEST.length;i++){ if(val("q"+i)==="") return fail("Please answer all "+TEST.length+" English test questions."); }
+      if(val("writing_sample").length < 20) return fail("Please write a short reply (at least a sentence).");
+    }
+    return true;
+  }
+
+  function buildReview(){
+    var rows = [
+      ["Name",val("full_name")],["Email",val("email")],["Phone",val("phone")],["Location",val("location")],
+      ["Legally allowed to work",val("legal_to_work")],["Transportation",val("has_transport")],
+      ["Experience",val("has_experience")],["Availability",val("availability").replace("_"," ")],
+      ["English (self)",val("english_self")],["Start date",val("start_date")]
+    ];
+    document.getElementById("reviewBox").innerHTML = rows.filter(function(r){return r[1];})
+      .map(function(r){return "<div><dt>"+r[0]+"</dt><dd>"+r[1]+"</dd></div>";}).join("");
+  }
+
+  // conditional: experience details
+  form.addEventListener("change", function(e){
+    if(e.target.name==="has_experience"){
+      document.getElementById("expBlock").classList.toggle("show", e.target.value==="yes");
+    }
+  });
+
+  backBtn.addEventListener("click", function(){ if(step>0){ step--; showStep(); } });
+
+  nextBtn.addEventListener("click", function(){
+    if(!validate()) return;
+    if(step < TOTAL-1){ step++; showStep(); return; }
+    submit();
+  });
+
+  function collect(){
+    var answers = {};
+    for(var i=0;i<TEST.length;i++){ var v=val("q"+i); if(v!=="") answers["q"+i]=Number(v); }
+    return {
+      full_name:val("full_name"), email:val("email"), phone:val("phone"), location:val("location")||null,
+      legal_to_work:val("legal_to_work"), has_transport:val("has_transport")||null,
+      english_self:val("english_self"), has_experience:val("has_experience"),
+      years_experience:val("years_experience")||null, experience_details:val("experience_details")||null,
+      availability:val("availability"), start_date:val("start_date")||null, hours_note:val("hours_note")||null,
+      test_answers:answers, writing_sample:val("writing_sample")||null, why_join:val("why_join")||null,
+      source:"careers"
+    };
+  }
+
+  function submit(){
+    nextBtn.disabled=true; nextBtn.textContent="Submitting…"; errEl.style.display="none";
+    var data = collect();
+
+    // 1) save to database (best effort)
+    var p1 = fetch(SUPABASE_URL+"/rest/v1/applicants",{
+      method:"POST",
+      headers:{ "Content-Type":"application/json", apikey:SUPABASE_ANON_KEY, "Authorization":"Bearer "+SUPABASE_ANON_KEY, "Prefer":"return=minimal" },
+      body:JSON.stringify(data)
+    }).catch(function(){});
+
+    // 2) email notification via Web3Forms
+    var emailPayload = Object.assign({
+      access_key:WEB3FORMS_KEY,
+      subject:"New job application — "+data.full_name,
+      from_name:"Rox Cleaning Careers",
+      english_test: TEST.map(function(t,i){ var a=data.test_answers["q"+i]; return (i+1)+". "+(a!=null?t.o[a]:"—"); }).join("  |  ")
+    }, data);
+    delete emailPayload.test_answers;
+    var p2 = fetch("https://api.web3forms.com/submit",{
+      method:"POST", headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify(emailPayload)
+    }).catch(function(){});
+
+    Promise.all([p1,p2]).then(function(){
+      document.getElementById("app").querySelector("#form").style.display="none";
+      document.querySelector(".prog").style.display="none";
+      document.getElementById("success").style.display="block";
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+  }
+
+  showStep();
+})();
+</script>
+</body>
+</html>
