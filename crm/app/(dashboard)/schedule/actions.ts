@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import type { JobStatus } from "@/lib/types";
+import type { JobStatus, ChecklistItem } from "@/lib/types";
 
 function parse(formData: FormData) {
   const str = (k: string) => {
@@ -50,6 +50,14 @@ export async function updateJobStatus(id: string, status: JobStatus) {
   if (error) return { error: error.message };
   revalidatePath("/schedule");
   revalidatePath("/");
+  return { ok: true };
+}
+
+export async function updateChecklist(id: string, checklist: ChecklistItem[]) {
+  const supabase = await createClient();
+  const { error } = await supabase.from("jobs").update({ checklist }).eq("id", id);
+  if (error) return { error: error.message };
+  revalidatePath(`/schedule/${id}`);
   return { ok: true };
 }
 

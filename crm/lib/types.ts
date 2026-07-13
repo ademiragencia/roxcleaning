@@ -47,6 +47,11 @@ export interface Lead {
   created_at: string;
 }
 
+export interface ChecklistItem {
+  text: string;
+  done: boolean;
+}
+
 export interface Job {
   id: string;
   client_id: string | null;
@@ -59,6 +64,7 @@ export interface Job {
   assigned_to: string | null;
   price: number | null;
   notes: string | null;
+  checklist: ChecklistItem[] | null;
   created_at: string;
 }
 

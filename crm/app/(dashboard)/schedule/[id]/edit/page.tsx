@@ -3,6 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import { requireAdmin } from "@/lib/auth";
 import { PageHeader, Card, Button } from "@/components/ui";
 import { JobForm } from "@/components/JobForm";
+import { JobChecklist } from "@/components/JobChecklist";
 import { updateJob, deleteJob } from "@/app/(dashboard)/schedule/actions";
 import type { Client, Profile, Job } from "@/lib/types";
 
@@ -44,6 +45,10 @@ export default async function EditJobPage({
             Delete cleaning
           </Button>
         </form>
+      </Card>
+
+      <Card className="mt-6 max-w-2xl p-6">
+        <JobChecklist jobId={id} initial={(job as Job).checklist} />
       </Card>
     </>
   );
