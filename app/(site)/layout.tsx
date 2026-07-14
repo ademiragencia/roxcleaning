@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { LanguageProvider } from "@/lib/language";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   // verification: { google: "PASTE_TOKEN_HERE" },
 };
 
-export default function RootLayout({
+export default function SiteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

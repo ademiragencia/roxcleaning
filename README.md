@@ -1,7 +1,12 @@
 # Rox Cleaning — Marketing Website
 
 Lead-generation site for Rox Cleaning, a professional cleaning company in Orlando, FL.
-Built with Next.js (App Router) + Tailwind CSS, fully static (`output: "export"`), bilingual EN / PT-BR.
+Built with Next.js (App Router) + Tailwind CSS, bilingual EN / PT-BR.
+
+> **Note:** the marketing pages are still fully static, but the repo also hosts a standalone
+> **Instagram downloader** at `/instagram` that needs serverless Route Handlers, so `output: "export"`
+> has been removed. Vercel builds this as a normal Next.js app (static pages stay static; only the
+> `/api/*` handlers run on demand). See [Instagram downloader](#instagram-downloader) below.
 
 ## Pages
 
@@ -13,14 +18,34 @@ Built with Next.js (App Router) + Tailwind CSS, fully static (`output: "export"`
 | `/store-cleaning` | Store / retail cleaning service page |
 | `/vacation-rental-cleaning` | Airbnb / VRBO turnover service page |
 
-Plus `sitemap.xml`, `robots.txt`, LocalBusiness JSON-LD (in `app/layout.tsx`) and Open Graph image (`public/og.png`).
+Plus `sitemap.xml`, `robots.txt`, LocalBusiness JSON-LD (in `app/(site)/layout.tsx`) and Open Graph image (`public/og.png`).
+
+The cleaning site lives in the `app/(site)` route group with its own root layout; the Instagram
+downloader lives in the independent `app/(ig)` route group so the two sites share no header/footer or chrome.
+
+## Instagram downloader
+
+A standalone, self-contained tool (Portuguese, sssinstagram-style) for downloading public Instagram
+media. It is fully independent from the cleaning site.
+
+| Route | Purpose |
+| --- | --- |
+| `/instagram` | Downloader landing page: paste a post/reel/IGTV link → get direct download buttons |
+| `/api/instagram` | Serverless resolver — turns a public IG URL into direct media URLs (`lib/instagram.ts`) |
+| `/api/download` | Serverless proxy that streams a single IG-CDN file back as an attachment (SSRF-guarded to IG hosts only) |
+
+How resolution works (no login, public content only): the resolver derives the media id from the
+shortcode and queries Instagram's public mobile-web media API, falling back to scraping the public
+`/embed/captioned/` page. Instagram rate-limits and blocks datacenter IPs and changes these surfaces
+often, so some links may fail on any given deploy — the UI degrades gracefully with a clear message.
+Private accounts are never accessible.
 
 ## Development
 
 ```bash
 npm install
 npm run dev     # http://localhost:3000
-npm run build   # static export to out/
+npm run build   # Next.js production build (static pages + serverless /api handlers)
 ```
 
 Deploy to Vercel as-is (framework preset: Next.js). If this repo subfolder is deployed, set the Vercel "Root Directory" to `rox-cleaning`.
