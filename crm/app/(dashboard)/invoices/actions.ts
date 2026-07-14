@@ -45,7 +45,7 @@ export async function createDocument(formData: FormData) {
     .select("id")
     .single();
   if (error || !doc) {
-    redirect(`/crm/invoices/new?error=${encodeURIComponent(error?.message ?? "Could not save.")}`);
+    redirect(`/invoices/new?error=${encodeURIComponent(error?.message ?? "Could not save.")}`);
   }
 
   if (items.length) {
@@ -61,7 +61,7 @@ export async function createDocument(formData: FormData) {
   }
 
   revalidatePath("/invoices");
-  redirect(`/crm/invoices/${doc.id}`);
+  redirect(`/invoices/${doc.id}`);
 }
 
 export async function updateDocumentStatus(id: string, status: DocStatus) {
@@ -77,5 +77,5 @@ export async function deleteDocument(id: string) {
   const supabase = await createClient();
   await supabase.from("documents").delete().eq("id", id);
   revalidatePath("/invoices");
-  redirect("/crm/invoices");
+  redirect("/invoices");
 }

@@ -28,7 +28,7 @@ export async function createClientRecord(formData: FormData) {
     data: { user },
   } = await supabase.auth.getUser();
   const values = fields(formData);
-  if (!values.name) return err("/crm/clients/new", "Name is required.");
+  if (!values.name) return err("/clients/new", "Name is required.");
 
   const { data, error } = await supabase
     .from("clients")
@@ -36,9 +36,9 @@ export async function createClientRecord(formData: FormData) {
     .select("id")
     .single();
 
-  if (error || !data) return err("/crm/clients/new", error?.message ?? "Could not save the client.");
+  if (error || !data) return err("/clients/new", error?.message ?? "Could not save the client.");
   revalidatePath("/clients");
-  redirect(`/crm/clients/${data.id}`);
+  redirect(`/clients/${data.id}`);
 }
 
 export async function updateClientRecord(id: string, formData: FormData) {
@@ -48,16 +48,16 @@ export async function updateClientRecord(id: string, formData: FormData) {
     .from("clients")
     .update({ ...values, updated_at: new Date().toISOString() })
     .eq("id", id);
-  if (error) return err(`/crm/clients/${id}/edit`, error.message);
+  if (error) return err(`/clients/${id}/edit`, error.message);
   revalidatePath(`/clients/${id}`);
   revalidatePath("/clients");
-  redirect(`/crm/clients/${id}`);
+  redirect(`/clients/${id}`);
 }
 
 export async function deleteClientRecord(id: string) {
   const supabase = await createClient();
   const { error } = await supabase.from("clients").delete().eq("id", id);
-  if (error) return err(`/crm/clients/${id}`, error.message);
+  if (error) return err(`/clients/${id}`, error.message);
   revalidatePath("/clients");
-  redirect("/crm/clients");
+  redirect("/clients");
 }

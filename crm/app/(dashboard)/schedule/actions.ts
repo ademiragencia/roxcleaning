@@ -30,18 +30,18 @@ const err = (path: string, message: string) =>
 export async function createJob(formData: FormData) {
   const supabase = await createClient();
   const { data, error } = await supabase.from("jobs").insert(parse(formData)).select("id").single();
-  if (error || !data) return err("/crm/schedule/new", error?.message ?? "Could not save the cleaning.");
+  if (error || !data) return err("/schedule/new", error?.message ?? "Could not save the cleaning.");
   revalidatePath("/schedule");
   revalidatePath("/");
-  redirect("/crm/schedule");
+  redirect("/schedule");
 }
 
 export async function updateJob(id: string, formData: FormData) {
   const supabase = await createClient();
   const { error } = await supabase.from("jobs").update(parse(formData)).eq("id", id);
-  if (error) return err(`/crm/schedule/${id}/edit`, error.message);
+  if (error) return err(`/schedule/${id}/edit`, error.message);
   revalidatePath("/schedule");
-  redirect("/crm/schedule");
+  redirect("/schedule");
 }
 
 export async function updateJobStatus(id: string, status: JobStatus) {
@@ -65,5 +65,5 @@ export async function deleteJob(id: string) {
   const supabase = await createClient();
   await supabase.from("jobs").delete().eq("id", id);
   revalidatePath("/schedule");
-  redirect("/crm/schedule");
+  redirect("/schedule");
 }

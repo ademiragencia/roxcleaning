@@ -18,5 +18,5 @@ export async function deleteApplicant(id: string) {
   const supabase = await createClient();
   await supabase.from("applicants").delete().eq("id", id);
   revalidatePath("/applicants");
-  redirect("/crm/applicants");
+  redirect("/applicants");
 }
