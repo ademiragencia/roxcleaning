@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Baixar Vídeos do Instagram Online Grátis — Reels, Fotos e Stories | InstaBaixar",
+  title: "Baixar Vídeos do Instagram Online Grátis — Reels, Fotos e Stories | BaixaGram",
   description:
     "Baixe vídeos, reels, fotos e IGTV do Instagram em alta qualidade (HD), grátis e sem programas. Cole o link e faça o download direto no celular ou computador.",
   keywords: [

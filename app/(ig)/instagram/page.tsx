@@ -142,7 +142,7 @@ function SiteHeader() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
             <SaveIcon className="h-5 w-5" />
           </span>
-          <span className="text-lg font-extrabold tracking-tight">InstaBaixar</span>
+          <span className="text-lg font-extrabold tracking-tight">BaixaGram</span>
         </a>
         <nav className="hidden gap-6 text-sm font-medium text-white/90 sm:flex">
           <a href="#como" className="transition-colors hover:text-white">Como baixar</a>
@@ -231,7 +231,7 @@ function Features() {
     <section id="recursos" className="scroll-mt-16 bg-gradient-to-b from-purple-50/60 to-white">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Por que usar o InstaBaixar
+          Por que usar o BaixaGram
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500">
           O jeito mais simples de salvar o que você ama no Instagram.
@@ -300,17 +300,17 @@ function SiteFooter() {
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-purple-600 to-pink-500">
               <SaveIcon className="h-5 w-5" />
             </span>
-            <span className="text-lg font-extrabold">InstaBaixar</span>
+            <span className="text-lg font-extrabold">BaixaGram</span>
           </div>
           <p className="max-w-2xl text-sm leading-relaxed text-gray-400">
-            O InstaBaixar é uma ferramenta independente e não é afiliado,
+            O BaixaGram é uma ferramenta independente e não é afiliado,
             associado, autorizado ou endossado pelo Instagram ou pela Meta
             Platforms, Inc. Use apenas para baixar conteúdo próprio ou de
             domínio público. Respeite os direitos autorais e os termos de uso do
             Instagram. Todas as marcas pertencem aos seus respectivos donos.
           </p>
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} InstaBaixar — Ferramenta gratuita para download do Instagram.
+            © {new Date().getFullYear()} BaixaGram — Ferramenta gratuita para download do Instagram.
           </p>
         </div>
       </div>
@@ -326,7 +326,7 @@ function StructuredData() {
     "@graph": [
       {
         "@type": "WebApplication",
-        name: "InstaBaixar",
+        name: "BaixaGram",
         applicationCategory: "MultimediaApplication",
         operatingSystem: "Web",
         offers: { "@type": "Offer", price: "0", priceCurrency: "BRL" },
