@@ -106,7 +106,7 @@
     "items": [
       {
         "name": "Melissa R.",
-        "role": "Homeowner · Lake Nona",
+        "role": "Homeowner · Winter Garden",
         "text": "Rox has cleaned our home bi-weekly for months and it has never looked better. They remember every little preference and the house smells amazing after every visit."
       },
       {
@@ -139,7 +139,7 @@
       },
       {
         "q": "Which areas do you serve?",
-        "a": "Orlando, Kissimmee and surrounding Central Florida communities — including Lake Nona, Winter Garden, Dr. Phillips, Celebration, Davenport and Champions Gate. Not sure about your area? Just ask!"
+        "a": "Orlando and surrounding Central Florida communities — including Downtown Orlando, Winter Garden, Windermere, Dr. Phillips, Ocoee, Apopka, Meadow Woods and Kissimmee. Not sure about your area? Just ask!"
       },
       {
         "q": "Do you offer discounts for recurring service?",
@@ -201,7 +201,7 @@
     "tagline": "Professional cleaning for homes, offices, stores and vacation rentals in Orlando, FL.",
     "servicesTitle": "Services",
     "areaTitle": "Service Area",
-    "areas": ["Orlando", "Kissimmee", "Lake Nona", "Winter Garden", "Dr. Phillips", "Celebration", "Davenport"],
+    "areas": ["Orlando", "Downtown Orlando", "Winter Garden", "Windermere", "Dr. Phillips", "Ocoee", "Apopka", "Meadow Woods", "Kissimmee"],
     "contactTitle": "Contact",
     "callLabel": "Call",
     "textLabel": "Text",

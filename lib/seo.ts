@@ -14,15 +14,14 @@ export const GEO = { latitude: 28.5383, longitude: -81.3792 };
 
 export const AREAS_SERVED = [
   "Orlando",
-  "Kissimmee",
-  "Lake Nona",
+  "Downtown Orlando",
   "Winter Garden",
-  "Dr. Phillips",
-  "Celebration",
-  "Davenport",
-  "Champions Gate",
   "Windermere",
-  "St. Cloud",
+  "Dr. Phillips",
+  "Ocoee",
+  "Apopka",
+  "Meadow Woods",
+  "Kissimmee",
 ];
 
 const BUSINESS_ID = `${SITE_URL}/#business`;

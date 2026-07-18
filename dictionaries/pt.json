@@ -106,7 +106,7 @@
     "items": [
       {
         "name": "Melissa R.",
-        "role": "Proprietária · Lake Nona",
+        "role": "Proprietária · Winter Garden",
         "text": "A Rox limpa nossa casa quinzenalmente há meses e ela nunca esteve tão bonita. Elas lembram de cada preferência nossa e a casa fica cheirosa depois de cada visita."
       },
       {
@@ -139,7 +139,7 @@
       },
       {
         "q": "Quais regiões vocês atendem?",
-        "a": "Orlando, Kissimmee e comunidades vizinhas da Flórida Central — incluindo Lake Nona, Winter Garden, Dr. Phillips, Celebration, Davenport e Champions Gate. Não tem certeza sobre a sua região? É só perguntar!"
+        "a": "Orlando e comunidades vizinhas da Flórida Central — incluindo Downtown Orlando, Winter Garden, Windermere, Dr. Phillips, Ocoee, Apopka, Meadow Woods e Kissimmee. Não tem certeza sobre a sua região? É só perguntar!"
       },
       {
         "q": "Tem desconto para limpeza recorrente?",
@@ -201,7 +201,7 @@
     "tagline": "Limpeza profissional de casas, escritórios, lojas e aluguéis de temporada em Orlando, FL.",
     "servicesTitle": "Serviços",
     "areaTitle": "Área de Atendimento",
-    "areas": ["Orlando", "Kissimmee", "Lake Nona", "Winter Garden", "Dr. Phillips", "Celebration", "Davenport"],
+    "areas": ["Orlando", "Downtown Orlando", "Winter Garden", "Windermere", "Dr. Phillips", "Ocoee", "Apopka", "Meadow Woods", "Kissimmee"],
     "contactTitle": "Contato",
     "callLabel": "Ligar",
     "textLabel": "SMS",
